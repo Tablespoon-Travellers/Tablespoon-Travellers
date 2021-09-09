@@ -109,7 +109,7 @@ attendees: [ObjectId<User>]
 
 ### Trello
 
-[Link to your trello board](https://trello.com) or picture of your physical board
+[Miro Board](https://miro.com/app/board/o9J_lxn1n94=/)
 
 ### Git
 
@@ -123,4 +123,4 @@ The url to your repository and to your deployed project
 
 The url to your presentation slides
 
-[Slides Link](https://miro.com/app/board/o9J_lxn1n94=/)
+[Slides Link]()
