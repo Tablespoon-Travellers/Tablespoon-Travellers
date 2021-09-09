@@ -101,6 +101,12 @@ attendees: [ObjectId<User>]
 
 ## Links
 
+
+### Slides
+
+[Wireframes Link](https://excalidraw.com/#room=72776afd85ccea581527,Ls_NTTRTs034isEdKU9VzA)
+
+
 ### Trello
 
 [Link to your trello board](https://trello.com) or picture of your physical board
