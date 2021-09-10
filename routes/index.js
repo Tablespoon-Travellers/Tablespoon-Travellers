@@ -1,12 +1,73 @@
-var express = require('express');
-var router = express.Router();
+const router = require('express').Router();
 
-const User = require("../models/User.model")
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  User.find().then((users)=>
-  res.render('index', { title: 'Express', users})
-  )
+/*const Room = require('./../models/Room.model');
+const Review = require('./../models/Review.model');
+
+/* GET home page */
+router.get('/', (req, res, next) => {
+	res.render('index');
 });
+
+/*router.get('/rooms', (req, res) => {
+	//Get rooms from DB
+	Room.find()
+		.populate('owner')
+		.then((rooms) => {
+			res.render('rooms/all-rooms', { rooms });
+		})
+		.catch((error) => {
+			console.log(error);
+		});
+});
+
+router.get('/rooms/:id', (req, res) => {
+	const { id } = req.params;
+	//const roomId = req.params.id
+
+  
+
+	Room.findById(req.params.id)
+		.populate('owner')
+		.populate({
+			path: 'reviews',
+			populate: {
+				path: 'user'
+			}
+		})
+		.then((room) => {
+			res.render('rooms/one-room', { room });
+		})
+		.catch((error) => {
+			console.log(error);
+		});
+});
+/** (reviews/rooms/:id) is better 
+router.post('/rooms/:id', (req, res) => {
+	//GET the values
+	const roomId = req.params.id;
+	const { comment } = req.body;
+
+	Review.create({
+		user: req.session.currentUser._id,
+		comment // comment: req.body.comment
+	})
+		.then((newReview) => {
+			console.log(newReview);
+
+			Room.findByIdAndUpdate(roomId, {
+				$addToSet: { reviews: newReview._id } //$put or $addToSet is to talk to the array. Put will not make sure you have non-duplicates
+			})
+				.then((updatedRoom) => {
+					console.log(updatedRoom);
+					res.redirect(`/rooms/${roomId}`);
+				})
+				.catch((error) => {
+					console.log(error);
+				});
+		})
+		.catch((error) => {
+			console.log(error);
+		});
+});*/
 
 module.exports = router;
