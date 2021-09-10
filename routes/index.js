@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-/*const Room = require('./../models/Room.model');
+const Room = require('./../models/Room.model');
 const Review = require('./../models/Review.model');
 
 /* GET home page */
@@ -8,7 +8,7 @@ router.get('/', (req, res, next) => {
 	res.render('index');
 });
 
-/*router.get('/rooms', (req, res) => {
+router.get('/rooms', (req, res) => {
 	//Get rooms from DB
 	Room.find()
 		.populate('owner')
@@ -41,7 +41,7 @@ router.get('/rooms/:id', (req, res) => {
 			console.log(error);
 		});
 });
-/** (reviews/rooms/:id) is better 
+/** (reviews/rooms/:id) is better */
 router.post('/rooms/:id', (req, res) => {
 	//GET the values
 	const roomId = req.params.id;
@@ -68,6 +68,6 @@ router.post('/rooms/:id', (req, res) => {
 		.catch((error) => {
 			console.log(error);
 		});
-});*/
+});
 
 module.exports = router;
