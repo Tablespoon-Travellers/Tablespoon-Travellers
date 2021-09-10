@@ -1,34 +1,35 @@
-// ℹ️ Gets access to environment variables/settings
-// https://www.npmjs.com/package/dotenv
-require("dotenv/config");
+require('dotenv').config()
 
-// ℹ️ Connects to the database
-require("./db");
+var createError = require('http-errors');
+var express = require('express');
 
-// Handles http requests (express is node js framework)
-// https://www.npmjs.com/package/express
-const express = require("express");
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 
-// Handles the handlebars
-// https://www.npmjs.com/package/hbs
-const hbs = require("hbs");
+var app = express();
 
-const app = express();
+// Functional curling style of loading configuration
+require('./config/db')
+require('./config/global')(app)
 
-// ℹ️ This function is getting exported from the config folder. It runs most pieces of middleware
-require("./config")(app);
 
-// default value for title local
-const projectName = "taste-the-world-app";
-const capitalized = (string) => string[0].toUpperCase() + string.slice(1).toLowerCase();
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 
-app.locals.title = `${capitalized(projectName)} created with IronLauncher`;
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
+});
 
-// 👇 Start handling routes here
-const index = require("./routes/index");
-app.use("/", index);
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-// ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
-require("./error-handling")(app);
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
+});
 
 module.exports = app;
