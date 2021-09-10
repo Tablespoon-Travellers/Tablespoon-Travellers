@@ -14,22 +14,37 @@ require('./config/global')(app)
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
+module.exports = app;
+
+
+
+
+const hbs = require('hbs');
+
+const app = express();
+
+
+require('./config')(app);
+
+
+app.locals.title = `${capitalized(projectName)} created with Ironlauncher`;
+
+// 👇 Start handling routes here
+const isLoggedIn = require('./middleware/isLoggedIn');
+
+const authRoutes = require('./routes/auth-routes');
+app.use('/auth', authRoutes);
+
+const privateRoutes = require('./routes/private-routes');
+app.use('/private', isLoggedIn, privateRoutes);
+
+const index = require('./routes/index');
+app.use('/', index);
+
+// ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
+require('./error-handling')(app);
 
 module.exports = app;
