@@ -2,8 +2,12 @@
 
 <form action="/auth/signup" method='POST'>
 
-  <label>Username:</label>
-  <input type="text" name="username" required/>
+  <div class="field">
+    <label class="label">Username</label>
+    <div class="control">
+      <input class="input" type="text" name="username" placeholder="Text input" required>
+    </div>
+  </div>
 
   <label>Email: </label>
   <input type="email" name="email" required />
