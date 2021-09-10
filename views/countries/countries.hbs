@@ -1,0 +1,14 @@
+<h1>Countries</h1>
+<br>
+
+<a href="/countries/create">
+  <button class="btn btn-success">Add a new celebrity</button>
+</a>
+
+{{#each allCountries}}
+<a href="/countries/{{this._id}}">
+<h2>
+    {{this.name}}
+</h2>
+</a>
+{{/each}}
