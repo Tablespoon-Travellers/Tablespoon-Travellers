@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "bcrypt": "^5",
+    "cloudinary": "^1",
+    "config": "^3.3.6",
     "connect-mongo": "^4",
     "cookie-parser": "^1",
     "dotenv": "^10",
@@ -17,7 +19,6 @@
     "http-errors": "^1",
     "mongoose": "^5",
     "morgan": "^1",
-    "cloudinary": "^1",
     "multer": "^1",
     "multer-storage-cloudinary": "^4",
     "serve-favicon": "^2"
