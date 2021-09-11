@@ -3,17 +3,18 @@
 
 
 /* Do we need this if we already have the country routes? */
+/* I don't think so! */
 
 
 
 
 
-/*const router = require('express').Router();
-
+const router = require('express').Router();
+/*
 const Country = require('./../models/Country.model');
 const Recipe = require('./../models/Recipe.model');
 
-/* GET home page *//*
+// GET home page 
 router.get('/', (req, res) => {
 	res.render('index');
 });
@@ -44,7 +45,7 @@ router.get('/countries/:id', (req, res) => {
 			console.log(error);
 		});
 });
-/** (reviews/rooms/:id) is better *//*
+// (reviews/rooms/:id) is better 
 router.post('/countries/:id', (req, res) => {
 	//GET the values
 	const countryId = req.params.id;
@@ -72,5 +73,6 @@ router.post('/countries/:id', (req, res) => {
 			console.log(error);
 		});
 });
+*/
 
-module.exports = router;*/
+module.exports = router;

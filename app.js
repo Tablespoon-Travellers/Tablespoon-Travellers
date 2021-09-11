@@ -1,45 +1,63 @@
-require("dotenv/config")
+require("dotenv/config");
 
-var createError = require('http-errors');
-var express = require('express');
+var createError = require("http-errors");
+var express = require("express");
 
 var app = express();
 
 // Functional curling style of loading configuration
-require('./config/db')
-require('./config/global')(app)
+require("./config/db");
+require("./config/global")(app);
 
 // default value for title local
-const projectName = 'project2';
-const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
+const projectName = "project2";
+const capitalized = (string) =>
+  string[0].toUpperCase() + string.slice(1).toLowerCase();
 
 app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 
-const isLoggedIn = require('./middleware/isLoggedIn');
+const isLoggedIn = require("./middleware/isLoggedIn");
 
-const authRoutes = require('./routes/auth.routes');
-app.use('/auth', authRoutes);
+const authRoutes = require("./routes/auth.routes");
+app.use("/auth", authRoutes);
 
-const privateRoutes = require('./routes/private.routes');
-app.use('/private', isLoggedIn, privateRoutes);
+const privateRoutes = require("./routes/private.routes");
+app.use("/private", isLoggedIn, privateRoutes);
 
-const index = require('./routes/index');
-app.use('/', index);
+const staticRoutes = require("./routes/static.routes");
+app.use(
+  "/static",
+  // Not sure why we need this
+  (req, res, next) => {
+    next();
+  },
+  staticRoutes
+);
+
+const index = require("./routes/index");
+app.use(
+  "/",
+  // Not sure why we need this
+  (req, res, next) => {
+    next();
+  },
+  index
+);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+  res.locals.error = req.app.get("env") === "development" ? err : {};
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render("error");
 });
 
 module.exports = app;

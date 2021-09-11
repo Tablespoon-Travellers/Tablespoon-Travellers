@@ -37,6 +37,16 @@ router.get(
     res.render('countries/countries', {allCountries})})
 });
 
+router.get(
+  '/show-me-a-random-country',
+  (req, res) => {
+  Country.find()
+  .then(allCountries => {
+    // TODO: Not sure this works with Mongoose
+    const randomCountry = allCountries[Math.floor(Math.random() * allCountries.length)]
+    res.render('countries/random-country', {country: randomCountry})})
+});
+
 router.post(
   "/",
   (req, res)=>{
