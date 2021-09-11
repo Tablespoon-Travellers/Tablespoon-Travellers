@@ -4,7 +4,6 @@ const countrySchema = new Schema({
 	name: { type: String },
 	description: { type: String },
     playlistId: { type: String },
-    recipeUrl: { type: String },
 	imageUrl: {
 		type: String,
 		default:
@@ -12,7 +11,7 @@ const countrySchema = new Schema({
 	},
 	
 	
-	reviews: [{type: Schema.Types.ObjectId, ref: 'Review', default: []}] // ID String for the review, not for the user or comment
+	recipe: [{type: Schema.Types.ObjectId, ref: 'Recipe', default: []}] // ID String for the review, not for the user or comment
 	/**
 	 * 	user: ID String, // If you populate level 2, you will get the complete info about the User
 	    comment: String

@@ -1,58 +1,61 @@
-const router = require('express').Router();
 
-const Room = require('./../models/Room.model');
-const Review = require('./../models/Review.model');
 
-/* GET home page */
-router.get('/', (req, res, next) => {
+
+
+/* Do we need this if we already have the country routes? */
+
+
+
+
+
+/*const router = require('express').Router();
+
+const Country = require('./../models/Country.model');
+const Recipe = require('./../models/Recipe.model');
+
+/* GET home page *//*
+router.get('/', (req, res) => {
 	res.render('index');
 });
 
-router.get('/rooms', (req, res) => {
+router.get('/countries', (req, res) => {
 	//Get rooms from DB
-	Room.find()
-		.populate('owner')
-		.then((rooms) => {
-			res.render('rooms/all-rooms', { rooms });
+	Country.find()
+		.then((countries) => {
+			res.render('countries/all-countries', { countries });
 		})
 		.catch((error) => {
 			console.log(error);
 		});
 });
 
-router.get('/rooms/:id', (req, res) => {
+router.get('/countries/:id', (req, res) => {
 	const { id } = req.params;
 	//const roomId = req.params.id
 
   
 
 	Room.findById(req.params.id)
-		.populate('owner')
-		.populate({
-			path: 'reviews',
-			populate: {
-				path: 'user'
-			}
-		})
+		.populate('recipe')
 		.then((room) => {
-			res.render('rooms/one-room', { room });
+			res.render('country/one-country', { room });
 		})
 		.catch((error) => {
 			console.log(error);
 		});
 });
-/** (reviews/rooms/:id) is better */
-router.post('/rooms/:id', (req, res) => {
+/** (reviews/rooms/:id) is better *//*
+router.post('/countries/:id', (req, res) => {
 	//GET the values
-	const roomId = req.params.id;
+	const countryId = req.params.id;
 	const { comment } = req.body;
 
-	Review.create({
+	Recipe.create({
 		user: req.session.currentUser._id,
 		comment // comment: req.body.comment
 	})
-		.then((newReview) => {
-			console.log(newReview);
+		.then((newRecipe) => {
+			console.log(newRecipe);
 
 			Room.findByIdAndUpdate(roomId, {
 				$addToSet: { reviews: newReview._id } //$put or $addToSet is to talk to the array. Put will not make sure you have non-duplicates
@@ -70,4 +73,4 @@ router.post('/rooms/:id', (req, res) => {
 		});
 });
 
-module.exports = router;
+module.exports = router;*/

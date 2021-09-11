@@ -1,0 +1,14 @@
+<h1>Recipes</h1>
+<br>
+
+<a href="/Recipes/create">
+  <button class="btn btn-success">Add a new recipe</button>
+</a>
+
+{{#each allRecipes}}
+<a href="/recipes/{{this._id}}">
+<h2>
+    {{this.name}}
+</h2>
+</a>
+{{/each}}
