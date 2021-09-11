@@ -67,17 +67,14 @@ router.get('/login', isNotLoggedIn, (req, res) => {
 
 router.post('/login', isNotLoggedIn, (req, res) => {
 	//GET VALUES FROM FORM
-	const { username, email, password } = req.body;
+	const { username, password } = req.body;
 
 	//VALIDATE INPUT
 	if (
 		!username ||
 		username === '' ||
 		!password ||
-		password === '' ||
-		!email ||
-		email === '' ||
-		!email.includes('@')
+		password === '' 
 	) {
 		res.render('auth/signup', { errorMessage: 'Something went wrong' });
 	}

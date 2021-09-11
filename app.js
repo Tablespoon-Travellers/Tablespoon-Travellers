@@ -24,6 +24,10 @@ app.use("/auth", authRoutes);
 const privateRoutes = require("./routes/private.routes");
 app.use("/private", isLoggedIn, privateRoutes);
 
+const countriesRoutes = require("./routes/country.routes");
+app.use("/countries", isLoggedIn, countriesRoutes);
+
+
 const staticRoutes = require("./routes/static.routes");
 app.use(
   "/static",
