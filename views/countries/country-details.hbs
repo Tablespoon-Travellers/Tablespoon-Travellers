@@ -1,4 +1,4 @@
-<h1>{{this.name}}</h1>
+<h1 class="title is-size-1">{{this.name}}</h1>
 <br>
 
 <p>
@@ -6,15 +6,19 @@
 </p>
 
 <p>
-    {{this.playlistId}}
+    <a href="https://open.spotify.com/playlist/{{this.playlistId}}">
+        Open playlist
+    </a>
 </p>
 
 <p>
-    {{this.recipeUrl}}
+    <a href="{{this.recipeUrl}}">
+        Open recipe
+    </a>
 </p>
 
 <p>
-    {{this.imageUrl}}
+    <img src="{{this.imageUrl}}" />
 </p>
 
 <a href="/countries/{{this._id}}/edit">Edit this country</a>

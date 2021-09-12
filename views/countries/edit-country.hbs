@@ -1,0 +1,27 @@
+<h1 class="title is-size-1">Edit Country</h1>
+
+<form action="/countries/{{ country._id }}/edit" method="POST">
+
+ <label class="form-label" for=''>Name</label>
+  <input class="form-control" type='text' name='name' value="{{ country.name }}">
+
+  <br>
+  <label class="form-label" for=''>Description</label>
+  <input class="form-control" type='text' name='description' value="{{ country.description }}">
+
+  <br>
+  <label class="form-label" for=''>Playlist ID</label>
+  <input class="form-control" type='text' name='playlistId' value="{{ country.playlistId }}">
+
+   <br>
+  <label class="form-label" for=''>Recipe</label>
+  <input class="form-control" type='text' name='recipeUrl' value="{{ country.recipeUrl }}"> 
+
+    <br>
+  <label class="form-label" for=''>Image</label>
+  <input class="form-control" type='text' name='imageUrl' value="{{ country.imageUrl }}">
+
+  <br>
+  <button type='submit' class="btn btn-success">Update</button>
+
+</form>
