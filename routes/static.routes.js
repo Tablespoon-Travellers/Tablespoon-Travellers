@@ -9,4 +9,13 @@ router.get('/500', (req, res) => {
 	res.render('static/500');
 });
 
+router.get('/spin', (req, res) => {
+	res.render('Wheel spinner');
+});
+
+router.get('/landing-page', (req, res) => {
+	res.render('static/landing-page');
+});
+
+
 module.exports = router;

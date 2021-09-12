@@ -1,0 +1,993 @@
+{
+  "seo": {
+    "web": {
+      "noindex": true,
+      "canonical-term": "Bobotie-1567590",
+      "meta-tags": {
+        "title": "Bobotie Recipe | Yummly",
+        "description": "Bobotie With Butter, Onions, Garlic, Bread, Milk, Curry Powder, Turmeric, Ground Cumin, Ground Beef, Ground Lamb, Apple, Raisins, Lemon Juice, Worcestershire Sauce, Eggs"
+      },
+      "link-tags": [
+        {
+          "rel": "canonical",
+          "href": "https://www.yummly.com/recipe/Bobotie-1567590"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.yummly.com/recipe/Bobotie-1567590"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en-GB",
+          "href": "https://www.yummly.co.uk/recipe/Bobotie-1567590"
+        }
+      ],
+      "image-url": "https://lh3.googleusercontent.com/AqUHmHEirvr25UXMiuLS_WqNua4sEsCKkezbcnabqhMQNkGkBtGYkB_nmypjUllpYlz4XRcrw2c2iIdq4DdiKQ"
+    },
+    "spotlightSearch": {
+      "keywords": [
+        "bobotie",
+        "ground beef",
+        "hamburger meat",
+        "boboti",
+        "indian ground beef",
+        "turmeric ground beef",
+        "ground lamb casserole",
+        "one pan ground beef",
+        "beef bobotie",
+        "recipes using tumeric",
+        "bobotie mixture",
+        "minced beef",
+        "ground beef curry raisins",
+        "what to do with hamburger meat",
+        "worcestershire sauce lamb",
+        "what to do with ground beef",
+        "ground beef curry",
+        "spaghetti",
+        "beef mince curry with raisins",
+        "curried ground beef"
+      ],
+      "noindex": true
+    },
+    "firebase": { "noindex": true }
+  },
+  "tracking-id": "recipe/Bobotie-1567590",
+  "content": {
+    "description": null,
+    "urbSubmitters": [],
+    "tags": {
+      "course": [
+        {
+          "display-name": "Main Dishes",
+          "tag-url": "course^course-Main Dishes"
+        }
+      ],
+      "nutrition": [
+        {
+          "display-name": "Low Sodium",
+          "tag-url": "nutrition^nutrition-low-sodium"
+        },
+        {
+          "display-name": "Low Carb",
+          "tag-url": "nutrition^nutrition-low-carb"
+        },
+        {
+          "display-name": "High Protein",
+          "tag-url": "nutrition^nutrition-high-protein"
+        },
+        {
+          "display-name": "High Potassium",
+          "tag-url": "nutrition^nutrition-high-potassium"
+        },
+        {
+          "display-name": "High Iron",
+          "tag-url": "nutrition^nutrition-high-iron"
+        }
+      ],
+      "technique": [
+        {
+          "display-name": "Browning",
+          "tag-url": "technique^technique-browning"
+        },
+        { "display-name": "Baking", "tag-url": "technique^technique-baking" }
+      ]
+    },
+    "preparationSteps": null,
+    "moreContent": {
+      "mobileSectionName": "More From Caroline's Cooking",
+      "queryParams": {
+        "start": 0,
+        "authorId": "Caroline's Cooking",
+        "id": "Bobotie-1567590",
+        "apiFeedType": "moreFrom"
+      },
+      "feed": []
+    },
+    "tagsAds": {
+      "adtag": [
+        { "display-name": "adtag main", "tag-url": "adtag^adtag-Main Dishes" }
+      ]
+    },
+    "details": {
+      "directionsUrl": "https://www.carolinescooking.com/bobotie/",
+      "totalTime": "1 hr 10 min",
+      "displayName": "Caroline's Cooking",
+      "images": [
+        {
+          "hostedLargeUrl": "https://lh3.googleusercontent.com/CBrQxUuLMSIRvqjkTZJwKGaDHN_Ue3qi4JZSGFahstri8Rb5U06vo25s2ierzc4XUKJpHGt1HL6Y98WQ55h1og=s360",
+          "resizableImageUrl": "https://lh3.googleusercontent.com/AqUHmHEirvr25UXMiuLS_WqNua4sEsCKkezbcnabqhMQNkGkBtGYkB_nmypjUllpYlz4XRcrw2c2iIdq4DdiKQ",
+          "resizableImageHeight": 1000,
+          "resizableImageWidth": 1333
+        }
+      ],
+      "name": "Bobotie",
+      "keywords": [
+        "bobotie",
+        "ground beef",
+        "hamburger meat",
+        "boboti",
+        "indian ground beef",
+        "turmeric ground beef",
+        "ground lamb casserole",
+        "one pan ground beef",
+        "beef bobotie",
+        "recipes using tumeric",
+        "bobotie mixture",
+        "minced beef",
+        "ground beef curry raisins",
+        "what to do with hamburger meat",
+        "worcestershire sauce lamb",
+        "what to do with ground beef",
+        "ground beef curry",
+        "spaghetti",
+        "beef mince curry with raisins",
+        "curried ground beef"
+      ],
+      "brand": null,
+      "id": "Bobotie-1567590",
+      "attribution": {
+        "html": "<a href='http://www.yummly.com/recipe/Bobotie-1567590'>Bobotie recipe</a> information powered by <img src='http://static.yummly.com/api-logo.png'/>",
+        "url": "http://www.yummly.com/recipe/Bobotie-1567590",
+        "text": "Bobotie recipes: information powered by Yummly",
+        "logo": "http://static.yummly.com/api-logo.png"
+      },
+      "recipeId": "de6aad20-3705-4bc5-9cd1-6f743ee5c26d",
+      "numberOfServings": 4,
+      "globalId": "661d4150-7322-4670-adb2-037606c99e13",
+      "totalTimeInSeconds": 4200,
+      "rating": 4
+    },
+    "relatedContent": {
+      "mobileSectionName": "Related",
+      "queryParams": {
+        "start": 0,
+        "apiFeedType": "related",
+        "id": "recipe:Bobotie-1567590"
+      },
+      "feed": []
+    },
+    "ingredientLines": [
+      {
+        "category": "Dairy",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "124a0414-6e69-102c-9a8a-0030485841f8",
+              "name": "tablespoon",
+              "abbreviation": "Tbsp.",
+              "plural": "tablespoons",
+              "pluralAbbreviation": "Tbsp.",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 1
+          },
+          "imperial": {
+            "unit": {
+              "id": "124a0414-6e69-102c-9a8a-0030485841f8",
+              "name": "tablespoon",
+              "abbreviation": "Tbsp.",
+              "plural": "tablespoons",
+              "pluralAbbreviation": "Tbsp.",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 1
+          }
+        },
+        "unit": "tablespoon",
+        "ingredientId": "9ed78948-13d2-4a5f-9089-1685267e675c",
+        "categoryId": "d8efba0b-2538-4882-9298-7d8c4d175c5f",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "butter" }],
+        "ingredient": "butter",
+        "id": "d7996eae-67ea-4970-b929-1d003adb5aad",
+        "remainder": "",
+        "quantity": 1,
+        "wholeLine": "1 tbsp butter 10g"
+      },
+      {
+        "category": "Produce",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "203f101c-fe8f-102c-a985-0030485841f8",
+              "name": "",
+              "abbreviation": "",
+              "plural": "",
+              "pluralAbbreviation": "",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 2
+          },
+          "imperial": {
+            "unit": {
+              "id": "203f101c-fe8f-102c-a985-0030485841f8",
+              "name": "",
+              "abbreviation": "",
+              "plural": "",
+              "pluralAbbreviation": "",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 2
+          }
+        },
+        "unit": "",
+        "ingredientId": "ba86101e-fdac-43f7-8c92-474e5d02ef2d",
+        "categoryId": "48480f6a-6064-11e9-8647-d663bd873d93",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "onions" }],
+        "ingredient": "onions",
+        "id": "f5efb4a5-95cc-456e-a69d-33c830b58053",
+        "remainder": "medium",
+        "quantity": 2,
+        "wholeLine": "2 onions medium"
+      },
+      {
+        "category": "Produce",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "12464202-6e69-102c-9a8a-0030485841f8",
+              "name": "clove",
+              "abbreviation": "clove",
+              "plural": "cloves",
+              "pluralAbbreviation": "cloves",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 2
+          },
+          "imperial": {
+            "unit": {
+              "id": "12464202-6e69-102c-9a8a-0030485841f8",
+              "name": "clove",
+              "abbreviation": "clove",
+              "plural": "cloves",
+              "pluralAbbreviation": "cloves",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 2
+          }
+        },
+        "unit": "clove",
+        "ingredientId": "d7adf64b-389a-466a-bb19-e4d8b9dabd26",
+        "categoryId": "48480f6a-6064-11e9-8647-d663bd873d93",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "garlic" }],
+        "ingredient": "garlic",
+        "id": "e46666e7-3471-4cd9-bd22-330ac524060f",
+        "remainder": "",
+        "quantity": 2,
+        "wholeLine": "2 cloves garlic"
+      },
+      {
+        "category": "Bakery",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "1249e43e-6e69-102c-9a8a-0030485841f8",
+              "name": "slice",
+              "abbreviation": "slice",
+              "plural": "slices",
+              "pluralAbbreviation": "slices",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 1
+          },
+          "imperial": {
+            "unit": {
+              "id": "1249e43e-6e69-102c-9a8a-0030485841f8",
+              "name": "slice",
+              "abbreviation": "slice",
+              "plural": "slices",
+              "pluralAbbreviation": "slices",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 1
+          }
+        },
+        "unit": "slice",
+        "ingredientId": "4db81d45-cae0-4821-928a-f8709fa99271",
+        "categoryId": "a18ef82c-56c9-4ace-9283-cfe9dcda1731",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "bread" }],
+        "ingredient": "bread",
+        "id": "05ddd5f4-da10-492d-9c81-b44be3e38879",
+        "remainder": "large",
+        "quantity": 1,
+        "wholeLine": "1 slice bread large"
+      },
+      {
+        "category": "Dairy",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "1248a146-6e69-102c-9a8a-0030485841f8",
+              "name": "milliliter",
+              "abbreviation": "ml",
+              "plural": "milliliters",
+              "pluralAbbreviation": "ml",
+              "kind": "volume",
+              "decimal": true
+            },
+            "quantity": 237
+          },
+          "imperial": {
+            "unit": {
+              "id": "1246463a-6e69-102c-9a8a-0030485841f8",
+              "name": "cup",
+              "abbreviation": "cup",
+              "plural": "cups",
+              "pluralAbbreviation": "cups",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 1
+          }
+        },
+        "unit": "cup",
+        "ingredientId": "82602ecc-2151-4177-8392-dea09a2fd3ba",
+        "categoryId": "d8efba0b-2538-4882-9298-7d8c4d175c5f",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "milk" }],
+        "ingredient": "milk",
+        "id": "f6c541bc-595a-4b27-a39e-06797896a0d3",
+        "remainder": "240ml",
+        "quantity": 1,
+        "wholeLine": "1 cup milk 240ml"
+      },
+      {
+        "category": "Baking & Cooking",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "124a0414-6e69-102c-9a8a-0030485841f8",
+              "name": "tablespoon",
+              "abbreviation": "Tbsp.",
+              "plural": "tablespoons",
+              "pluralAbbreviation": "Tbsp.",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 1
+          },
+          "imperial": {
+            "unit": {
+              "id": "124a0414-6e69-102c-9a8a-0030485841f8",
+              "name": "tablespoon",
+              "abbreviation": "Tbsp.",
+              "plural": "tablespoons",
+              "pluralAbbreviation": "Tbsp.",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 1
+          }
+        },
+        "unit": "tablespoon",
+        "ingredientId": "8f6b69f9-feff-49ca-8f28-650e1d162d15",
+        "categoryId": "48481730-6064-11e9-8647-d663bd873d93",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "curry powder" }],
+        "ingredient": "curry powder",
+        "id": "bfd78282-1d59-4d11-9682-726592d81e58",
+        "remainder": "",
+        "quantity": 1,
+        "wholeLine": "1 tbsp curry powder"
+      },
+      {
+        "category": "Baking & Cooking",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "124afc0c-6e69-102c-9a8a-0030485841f8",
+              "name": "teaspoon",
+              "abbreviation": "tsp.",
+              "plural": "teaspoons",
+              "pluralAbbreviation": "tsp.",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 0.5
+          },
+          "imperial": {
+            "unit": {
+              "id": "124afc0c-6e69-102c-9a8a-0030485841f8",
+              "name": "teaspoon",
+              "abbreviation": "tsp.",
+              "plural": "teaspoons",
+              "pluralAbbreviation": "tsp.",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 0.5
+          }
+        },
+        "unit": "teaspoon",
+        "ingredientId": "5f7c706b-9059-4404-a579-35d7b94b9725",
+        "categoryId": "48481730-6064-11e9-8647-d663bd873d93",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "turmeric" }],
+        "ingredient": "turmeric",
+        "id": "82d83391-05cc-4295-a807-6e6dac0e98d0",
+        "remainder": "",
+        "quantity": 0.5,
+        "wholeLine": "1/2 tsp turmeric"
+      },
+      {
+        "category": "Baking & Cooking",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "124afc0c-6e69-102c-9a8a-0030485841f8",
+              "name": "teaspoon",
+              "abbreviation": "tsp.",
+              "plural": "teaspoons",
+              "pluralAbbreviation": "tsp.",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 0.5
+          },
+          "imperial": {
+            "unit": {
+              "id": "124afc0c-6e69-102c-9a8a-0030485841f8",
+              "name": "teaspoon",
+              "abbreviation": "tsp.",
+              "plural": "teaspoons",
+              "pluralAbbreviation": "tsp.",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 0.5
+          }
+        },
+        "unit": "teaspoon",
+        "ingredientId": "b9884fd2-1e6f-4835-96a2-cb25ce9f5721",
+        "categoryId": "48481730-6064-11e9-8647-d663bd873d93",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "ground cumin" }],
+        "ingredient": "ground cumin",
+        "id": "789c3948-330e-4d91-abff-7ba909e29abe",
+        "remainder": "",
+        "quantity": 0.5,
+        "wholeLine": "1/2 tsp ground cumin"
+      },
+      {
+        "category": "Meat",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "12487144-6e69-102c-9a8a-0030485841f8",
+              "name": "kilogram",
+              "abbreviation": "kg",
+              "plural": "kilograms",
+              "pluralAbbreviation": "kilograms",
+              "kind": "mass",
+              "decimal": true
+            },
+            "quantity": 0.68
+          },
+          "imperial": {
+            "unit": {
+              "id": "12493192-6e69-102c-9a8a-0030485841f8",
+              "name": "pound",
+              "abbreviation": "lb.",
+              "plural": "pounds",
+              "pluralAbbreviation": "lb.",
+              "kind": "mass",
+              "decimal": false
+            },
+            "quantity": 1.5
+          }
+        },
+        "unit": "pound",
+        "ingredientId": "1b954759-e99d-4cdf-bfad-4abf04e84177",
+        "categoryId": "40ea353d-0dfc-4f8c-bf09-be73af9bd78e",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "ground beef" }],
+        "ingredient": "ground beef",
+        "id": "e4e25153-d391-4a08-af1f-5d14e118e9b7",
+        "remainder": null,
+        "quantity": 1.5,
+        "wholeLine": "1 1/2 lb ground beef 680g, or ground lamb/beef or lamb mince or a mixture of both"
+      },
+      {
+        "category": "Meat",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+              "name": "gram",
+              "abbreviation": "g",
+              "plural": "grams",
+              "pluralAbbreviation": "grams",
+              "kind": "mass",
+              "decimal": true
+            },
+            "quantity": 680
+          },
+          "imperial": {
+            "unit": {
+              "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+              "name": "gram",
+              "abbreviation": "g",
+              "plural": "grams",
+              "pluralAbbreviation": "grams",
+              "kind": "mass",
+              "decimal": true
+            },
+            "quantity": 680
+          }
+        },
+        "unit": "gram",
+        "ingredientId": "81f2bf67-1abe-4bd8-b0e9-bc3ecacf842f",
+        "categoryId": "40ea353d-0dfc-4f8c-bf09-be73af9bd78e",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "ground lamb" }],
+        "ingredient": "ground lamb",
+        "id": "636310ef-5735-4ad4-8bb3-94d9d4c2299b",
+        "remainder": null,
+        "quantity": 680,
+        "wholeLine": "1 1/2 lb ground beef 680g, or ground lamb/beef or lamb mince or a mixture of both"
+      },
+      {
+        "category": "Produce",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "203f101c-fe8f-102c-a985-0030485841f8",
+              "name": "",
+              "abbreviation": "",
+              "plural": "",
+              "pluralAbbreviation": "",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 1
+          },
+          "imperial": {
+            "unit": {
+              "id": "203f101c-fe8f-102c-a985-0030485841f8",
+              "name": "",
+              "abbreviation": "",
+              "plural": "",
+              "pluralAbbreviation": "",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 1
+          }
+        },
+        "unit": "",
+        "ingredientId": "b56491a3-0a75-420b-ade8-1a26d736d4d2",
+        "categoryId": "48480f6a-6064-11e9-8647-d663bd873d93",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "apples" }],
+        "ingredient": "apple",
+        "id": "5c1f16d7-86d6-4ef0-8f88-ffc913ca2134",
+        "remainder": "peeled, cored and grated",
+        "quantity": 1,
+        "wholeLine": "1 apple peeled, cored and grated"
+      },
+      {
+        "category": "Snack Foods",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+              "name": "gram",
+              "abbreviation": "g",
+              "plural": "grams",
+              "pluralAbbreviation": "grams",
+              "kind": "mass",
+              "decimal": true
+            },
+            "quantity": 28
+          },
+          "imperial": {
+            "unit": {
+              "id": "1246463a-6e69-102c-9a8a-0030485841f8",
+              "name": "cup",
+              "abbreviation": "cup",
+              "plural": "cups",
+              "pluralAbbreviation": "cups",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 0.25
+          }
+        },
+        "unit": "cup",
+        "ingredientId": "a85a06ce-ae0f-434a-ba43-276b1a03d500",
+        "categoryId": "88fb6ea6-981b-43fd-8a8d-7e43512ed33e",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "raisins" }],
+        "ingredient": "raisins",
+        "id": "b9b5e57a-4a1d-43f9-b26e-806eaed6e9fa",
+        "remainder": "",
+        "quantity": 0.25,
+        "wholeLine": "1/4 cup raisins 35g"
+      },
+      {
+        "category": "Produce",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "203f101c-fe8f-102c-a985-0030485841f8",
+              "name": "",
+              "abbreviation": "",
+              "plural": "",
+              "pluralAbbreviation": "",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 0.5
+          },
+          "imperial": {
+            "unit": {
+              "id": "203f101c-fe8f-102c-a985-0030485841f8",
+              "name": "",
+              "abbreviation": "",
+              "plural": "",
+              "pluralAbbreviation": "",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 0.5
+          }
+        },
+        "unit": "",
+        "ingredientId": "657ff16c-114f-49e3-a673-e48e5a163ab8",
+        "categoryId": "48480f6a-6064-11e9-8647-d663bd873d93",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "lemon juice" }],
+        "ingredient": "lemon juice",
+        "id": "843e5dd0-91d8-40e5-ac6e-b8fecebff06f",
+        "remainder": "",
+        "quantity": 0.5,
+        "wholeLine": "1/2 lemon juice"
+      },
+      {
+        "category": "Condiments",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "124a0414-6e69-102c-9a8a-0030485841f8",
+              "name": "tablespoon",
+              "abbreviation": "Tbsp.",
+              "plural": "tablespoons",
+              "pluralAbbreviation": "Tbsp.",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 1
+          },
+          "imperial": {
+            "unit": {
+              "id": "124a0414-6e69-102c-9a8a-0030485841f8",
+              "name": "tablespoon",
+              "abbreviation": "Tbsp.",
+              "plural": "tablespoons",
+              "pluralAbbreviation": "Tbsp.",
+              "kind": "volume",
+              "decimal": false
+            },
+            "quantity": 1
+          }
+        },
+        "unit": "tablespoon",
+        "ingredientId": "99c797fa-fce6-4182-a230-f2872db9180c",
+        "categoryId": "8b69687e-72ad-484a-8e94-413f63ef9384",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "worchestershire" }],
+        "ingredient": "Worcestershire sauce",
+        "id": "b6f72576-0a63-41b4-b6a6-a766f3906440",
+        "remainder": "",
+        "quantity": 1,
+        "wholeLine": "1 tbsp Worcestershire sauce"
+      },
+      {
+        "category": "Dairy",
+        "amount": {
+          "metric": {
+            "unit": {
+              "id": "203f101c-fe8f-102c-a985-0030485841f8",
+              "name": "",
+              "abbreviation": "",
+              "plural": "",
+              "pluralAbbreviation": "",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 2
+          },
+          "imperial": {
+            "unit": {
+              "id": "203f101c-fe8f-102c-a985-0030485841f8",
+              "name": "",
+              "abbreviation": "",
+              "plural": "",
+              "pluralAbbreviation": "",
+              "kind": "count",
+              "decimal": false
+            },
+            "quantity": 2
+          }
+        },
+        "unit": "",
+        "ingredientId": "7f618abd-9024-4c59-865c-06909f41f5d1",
+        "categoryId": "d8efba0b-2538-4882-9298-7d8c4d175c5f",
+        "relatedRecipeSearchTerm": [{ "allowedIngredient": "eggs" }],
+        "ingredient": "eggs",
+        "id": "f7bb559b-5857-4242-9882-041e84d8f0b9",
+        "remainder": "",
+        "quantity": 2,
+        "wholeLine": "2 eggs"
+      }
+    ],
+    "unitSystem": "imperial",
+    "reviews": {
+      "mobileSectionName": "Reviews",
+      "totalReviewCount": 4,
+      "averageRating": 4,
+      "reviews": [],
+      "thisUserReview": null,
+      "sortBy": "create-time"
+    },
+    "relatedProducts": {
+      "mobileSectionName": "Essential Tools",
+      "queryParams": {
+        "start": 0,
+        "apiFeedType": "related",
+        "id": "recipe:Bobotie-1567590",
+        "relatedContentType": "product"
+      },
+      "feed": []
+    },
+    "preparationStepCount": 0,
+    "nutrition": {
+      "mobileSectionName": "Nutrition",
+      "nutritionEstimates": [
+        {
+          "attribute": "FAT_KCAL",
+          "value": 650,
+          "unit": {
+            "name": "calorie",
+            "abbreviation": "kcal",
+            "plural": "calories",
+            "decimal": true
+          },
+          "display": { "value": 650, "unit": null, "percentDailyValue": null }
+        },
+        {
+          "attribute": "K",
+          "value": 1.32,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": 1320, "unit": "mg", "percentDailyValue": 38 }
+        },
+        {
+          "attribute": "FASAT",
+          "value": 30.61,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": 31, "unit": "g", "percentDailyValue": 155 }
+        },
+        {
+          "attribute": "FE",
+          "value": 0.01,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": null, "unit": null, "percentDailyValue": 50 }
+        },
+        {
+          "attribute": "SUGAR",
+          "value": 15.7,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": 16, "unit": "g", "percentDailyValue": null }
+        },
+        {
+          "attribute": "FIBTG",
+          "value": 3.05,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": 3, "unit": "g", "percentDailyValue": 12 }
+        },
+        {
+          "attribute": "PROCNT",
+          "value": 69.09,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": 69, "unit": "g", "percentDailyValue": null }
+        },
+        {
+          "attribute": "CHOCDF",
+          "value": 27.03,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": 27, "unit": "g", "percentDailyValue": 9 }
+        },
+        {
+          "attribute": "CHOLE",
+          "value": 0.36,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": 360, "unit": "mg", "percentDailyValue": 120 }
+        },
+        {
+          "attribute": "CA",
+          "value": 0.22,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": null, "unit": null, "percentDailyValue": 20 }
+        },
+        {
+          "attribute": "VITA_IU",
+          "value": 263.37,
+          "unit": {
+            "name": "IU",
+            "abbreviation": "IU",
+            "plural": "IU",
+            "decimal": true
+          },
+          "display": { "value": null, "unit": null, "percentDailyValue": 6 }
+        },
+        {
+          "attribute": "FATRN",
+          "value": 1.7,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": 1.5, "unit": "g", "percentDailyValue": null }
+        },
+        {
+          "attribute": "ENERC_KCAL",
+          "value": 1045.09,
+          "unit": {
+            "name": "calorie",
+            "abbreviation": "kcal",
+            "plural": "calories",
+            "decimal": true
+          },
+          "display": { "value": 1050, "unit": null, "percentDailyValue": null }
+        },
+        {
+          "attribute": "VITC",
+          "value": 0.01,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": null, "unit": null, "percentDailyValue": 20 }
+        },
+        {
+          "attribute": "FAT",
+          "value": 71.98,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": 72, "unit": "g", "percentDailyValue": 111 }
+        },
+        {
+          "attribute": "NA",
+          "value": 0.4,
+          "unit": {
+            "name": "gram",
+            "abbreviation": "g",
+            "plural": "grams",
+            "decimal": true
+          },
+          "display": { "value": 400, "unit": "mg", "percentDailyValue": 17 }
+        }
+      ]
+    },
+    "yums": { "count": 164, "this-user": "none" }
+  },
+  "type": "single recipe",
+  "recipeType": ["BasicRecipe"],
+  "proRecipe": false,
+  "display": {
+    "displayName": "Bobotie",
+    "images": [
+      "https://lh3.googleusercontent.com/AqUHmHEirvr25UXMiuLS_WqNua4sEsCKkezbcnabqhMQNkGkBtGYkB_nmypjUllpYlz4XRcrw2c2iIdq4DdiKQ"
+    ],
+    "flag": null,
+    "source": {
+      "sourceRecipeUrl": "https://www.carolinescooking.com/bobotie/",
+      "sourceFaviconUrl": null,
+      "sourceHttpsOk": true,
+      "sourceInFrame": true,
+      "sourceDisplayName": "Caroline's Cooking",
+      "proSource": null,
+      "sourceSiteUrl": "carolinescooking.com",
+      "introVideo": {
+        "id": null,
+        "originalUrl": null,
+        "hlsUrl": null,
+        "dashUrl": null,
+        "hasAudio": null,
+        "snapshot": { "original": null, "resizable": null }
+      },
+      "eyebrowText": null,
+      "sourcePageUrl": "carolinescooking",
+      "marketingCopy": null,
+      "sourceHttpOk": false,
+      "marketingImage": null
+    },
+    "profiles": [
+      {
+        "profileName": "carolinescooking",
+        "displayName": "Caroline's Cooking",
+        "siteUrl": "carolinescooking.com",
+        "pictureUrl": "https://s.yumm.ly/profile/carolines-cooking-profile.jpg",
+        "pageUrl": "carolinescooking",
+        "description": "Caroline's Cooking  aims to share recipes that we have enjoyed as a family, using some of the best ingredients we can find locally, with some international inspiration as well.",
+        "type": "content-owner",
+        "profileUrl": "https://www.yummly.com/page/carolinescooking"
+      }
+    ],
+    "displayPrepStepsInline": null,
+    "collections": []
+  },
+  "promoted": false,
+  "searchResult": { "score": 101.83299 }
+}

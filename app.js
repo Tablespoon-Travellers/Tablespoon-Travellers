@@ -10,7 +10,7 @@ require("./config/db");
 require("./config/global")(app);
 
 // default value for title local
-const projectName = "project2";
+const projectName = "Tablespoon Traveller";
 const capitalized = (string) =>
   string[0].toUpperCase() + string.slice(1).toLowerCase();
 
