@@ -1,25 +1,64 @@
-<h1 class="title is-size-1">{{this.name}}</h1>
-<br>
-
-<p>
-    {{this.description}}
-</p>
-
-<p>
-    <a href="https://open.spotify.com/playlist/{{this.playlistId}}">
+<div class="columns is-multiline">
+  <div class="column is-12 is-gapless">
+    <p class="title">
+      {{country.name}}
+    </p>
+    <p class="subtitle">
+      {{country.description}}
+    </p>
+  </div>
+  <div class="column is-6">
+    <p>
+      <h2 class="subtitle is-size-2">
+        Spotify Playlist:
+        {{playlist.name}}
+      </h2>
+      <a href="https://open.spotify.com/playlist/{{country.playlistId}}">
         Open playlist
+      </a>
+      <iframe
+        src="https://open.spotify.com/embed/playlist/{{country.playlistId}}"
+        width="100%"
+        height="400"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      ></iframe>
+    </p>
+    <img src="{{country.imageUrl}}" />
+  </div>
+  <div class="column is-6">
+    <h2 class="subtitle is-size-2">National Dish: {{country.dishName}}</h2>
+    <p>
+      Time:
+      {{recipe.content.details.totalTime}}
+    </p>
+    <img
+      src="{{recipe.content.details.images.0.hostedLargeUrl}}"
+      style="width: 100%;"
+    />
+    <a href="{{country.recipeUrl}}">
+      Open recipe
     </a>
-</p>
 
-<p>
-    <a href="{{this.recipeUrl}}">
-        Open recipe
-    </a>
-</p>
+    <p>
+      <a href="{{recipe.content.details.directionsUrl}}">
+        Directions at
+        <em>{{recipe.display.displayName}}</em>
+      </a>
+    </p>
+    <h3 class="subtitle is-size-3">
+      Ingredients
+    </h3>
+    <ul>
+      {{#each recipe.content.ingredientLines}}
+        <li>
+          {{this.wholeLine}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
 
-<p>
-    <img src="{{this.imageUrl}}" />
-</p>
-
-<a href="/countries/{{this._id}}/edit">Edit this country</a>
-<a href="/countries/{{this._id}}/delete">Delete this country</a>
+<a href="/countries/{{country._id}}/edit">Edit this country</a>
+<a href="/countries/{{country._id}}/delete">Delete this country</a>
