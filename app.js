@@ -38,16 +38,6 @@ app.use(
   staticRoutes
 );
 
-const index = require("./routes/index");
-app.use(
-  "/",
-  // Not sure why we need this
-  (req, res, next) => {
-    next();
-  },
-  index
-);
-
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
