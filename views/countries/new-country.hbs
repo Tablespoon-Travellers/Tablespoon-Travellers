@@ -2,24 +2,59 @@
 
 <form action="/countries/" method="POST">
 
- <label class="form-label" for='name'>Name</label>
-  <input class="form-control" type='text' name='name'>
+  <label class="label" for="">Name of Country</label>
+  <div class="control">
+    <input class="input" type="text" name="name" value="country.name" />
+    <p class="help">Name of country</p>
+  </div>
 
-  <br>
-  <label class="form-label" for='description'>Description</label>
-  <input class="form-control" type='text' name='description'>
+   <br />
+  <label class="label" for="">Description</label>
+  <div class="control">
+    <input
+      class="input"
+      type="text"
+      name="description"
+      value="country.description"
+    />
+    <p class="help">Short description of country</p>
+  </div>
 
-  <br>
-  <label class="form-label" for='playlistId'>Playlist ID</label>
-  <input class="form-control" type='text' name='playlistId'>
+  <br />
+  <label class="label" for="">Playlist ID</label>
+  <div class="control">
+    <input
+      class="input"
+      type="text"
+      name="playlistId"
+      value="country.playlistId"
+    />
+    <p class="help">The number at the end of the Spotify playlist URL</p>
+  </div>
 
-   <br>
-  <label class="form-label" for='dishName'>Dish name</label>
-  <input class="form-control" type='text' name='dishName'> 
+  <br />
+  <label class="label" for="">National Dish</label>
+  <div class="control">
+    <input
+      class="input"
+      type="text"
+      name="dishName"
+      value="country.dishName"
+    />
+    <p class="help">Your favourite dish from this country</p>
+  </div>
 
-    <br>
-  <label class="form-label" for='imageUrl'>Image</label>
-  <input class="form-control" type='text' name='imageUrl'>
+  <br />
+  <label class="label" for="">Image</label>
+  <div class="control">
+    <input
+      class="input"
+      type="text"
+      name="imageUrl"
+      value="country.imageUrl"
+    />
+    <p class="help">The url of a landscape image you think represents this country</p>
+  </div>
 
   <br>
   <button type='submit' class="btn btn-success">Create</button>
