@@ -1,4 +1,4 @@
-<div class="columns is-multiline">
+<div class="columns is-multiline box">
   <div class="column is-12 is-gapless">
     <p class="title">
       {{country.name}}
@@ -59,6 +59,15 @@
     </ul>
   </div>
 </div>
-
-<a href="/countries/{{country._id}}/edit">Edit this country</a>
-<a href="/countries/{{country._id}}/delete">Delete this country</a>
+<div class="columns is-multiline">
+  <div class="column is-narrow">
+    Created by {{ country.created_by.username }}
+  </div>
+  <div class="column is-narrow">
+    Updated by {{ country.updated_by.username }}
+  </div>
+  <div class="column is-12">
+    <a class="button is-success" href="/countries/{{country._id}}/edit">Edit this country</a>
+    <a class="button is-danger" href="/countries/{{country._id}}/delete">Delete this country</a>
+  </div>
+</div>

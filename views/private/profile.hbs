@@ -1,13 +1,11 @@
-<h1 class="title is-size-1">This is your private profile page, {{user.username}}</h1>
+<h1 class="title is-size-1">This is your private profile page,
+  {{user.username}}</h1>
 
-<br /><br />
-
-<div>
-<a href="/auth/logout">Logout</a>
-</div>
-
-<br /><br />
-
-<div>
-<a href="/countries/create">Add a new country</a>
+<div class="field is-grouped">
+  <p class="control">
+    <a class="button is-success" href="/countries/create">Add a new country</a>
+  </p>
+  <p class="control">
+    <a class="button is-danger" href="/auth/logout">Logout</a>
+  </p>
 </div>

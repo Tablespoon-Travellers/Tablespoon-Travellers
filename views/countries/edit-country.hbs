@@ -1,4 +1,4 @@
-<h1 class="title is-size-1">Edit Country</h1>
+<h1 class="title is-size-1">{{title}}</h1>
 
 {{! <div class="field">
         <label class="label">Username</label>
@@ -13,7 +13,7 @@
         </div>
       </div> }}
 
-<form action="/countries/{{country._id}}/edit" method="POST">
+<form action="{{action}}" method="POST">
 
   <label class="label" for="">Name of Country</label>
   <div class="control">
@@ -75,7 +75,7 @@
       <a class="button is-danger is-light" href="/">Cancel</a>
     </div>
     <div class="control">
-      <button class="button is-success" type="submit">Update</button>
+      <button class="button is-success" type="submit">{{submit}}</button>
     </div>
   </div>
 

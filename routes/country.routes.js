@@ -4,20 +4,24 @@ TODO: ADD ROUTES FOR LIST, DETAIL, CREATE, UPDATE AND DELETE
 
 // starter code in both routes/countries.routes.js and routes/countries.routes.js
 const router = require("express").Router();
-const Yummly = require('../clients/yummly');
+const Yummly = require("../clients/yummly");
 
 const Country = require("../models/Country.model");
 
 // create country form
 router.get("/create", (req, res) => {
-  res.render("countries/new-country");
+  res.render("countries/edit-country", {
+    action: "/countries/",
+    title: "Add New Country",
+    submit: "Create",
+  });
 });
 
 // gets 1 country
 router.get("/:id", (req, res) => {
   Country.findById(req.params.id)
-    .populate('created_by')
-    .populate('updated_by')
+    .populate("created_by")
+    .populate("updated_by")
     .then((country) => {
       // Retrieve an access token
       req.app.spotifyApi
@@ -27,8 +31,8 @@ router.get("/:id", (req, res) => {
           req.app.spotifyApi
             .getPlaylist(country.playlistId)
             .then(async (playlist) => {
-              const yummly = new Yummly()
-              const recipe = await yummly.search(country.dishName)
+              const yummly = new Yummly();
+              const recipe = await yummly.search(country.dishName);
               // recipe.content.ingredientLines.forEach(
               //   (item) => {
               //     console.log(JSON.stringify(item, undefined, 2))
@@ -79,7 +83,7 @@ router.get("/-/show-me-a-random-country", (req, res) => {
       // TODO: Not sure this works with Mongoose
       const randomCountry =
         allCountries[Math.floor(Math.random() * allCountries.length)];
-      res.redirect(`/countries/${randomCountry._id}`)
+      res.redirect(`/countries/${randomCountry._id}`);
     })
     .catch((error) => console.log(error));
 });
@@ -87,7 +91,15 @@ router.get("/-/show-me-a-random-country", (req, res) => {
 // creates a country NEEDS TO CHANGE TO SUPPORT RECIPES
 router.post("/", (req, res) => {
   const { name, description, playlistId, dishName, imageUrl } = req.body;
-  Country.create({ name, description, playlistId, dishName, imageUrl, created_by: req.session.currentUser, updated_by: req.session.currentUser })
+  Country.create({
+    name,
+    description,
+    dishName,
+    imageUrl,
+    playlistId: playlistId.replace("https://open.spotify.com/playlist/", ""),
+    created_by: req.session.currentUser._id,
+    updated_by: req.session.currentUser._id,
+  })
     .then((newCountry) => res.redirect("/countries/"))
     .catch((error) => console.log(error));
 });
@@ -97,7 +109,12 @@ router
   .get((req, res) => {
     Country.findById(req.params.id)
       .then((country) => {
-        res.render("countries/edit-country", { country });
+        res.render("countries/edit-country", {
+          country,
+          action: `/countries/${country._id}/edit`,
+          title: "Update Country",
+          submit: "Update",
+        });
       })
       .catch((error) => console.log(error));
   })
@@ -106,10 +123,10 @@ router
     Country.findByIdAndUpdate(req.params.id, {
       name,
       description,
-      playlistId,
       dishName,
       imageUrl,
-      updated_by: req.session.currentUser
+      playlistId: playlistId.replace("https://open.spotify.com/playlist/", ""),
+      updated_by: req.session.currentUser,
     })
       .then((updateCountry) => res.redirect(`/countries/${req.params.id}`))
       .catch((error) => console.log(error));
