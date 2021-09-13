@@ -12,9 +12,9 @@ Describe your project in one/two lines.
 - **sign up** - As a user I want to sign up on the webpage so that I can see all the events that I could attend
 - **login** - As a user I want to be able to log in on the webpage so that I can get back to my account
 - **logout** - As a user I want to be able to log out from the webpage so that I can make sure no one will access my account
-- **events list** - As a user I want to see all the events available so that I can choose which ones I want to attend
-- **events create** - As a user I want to create an event so that I can invite others to attend
-- **events detail** - As a user I want to see the event details and attendee list of one event so that I can decide if I want to attend 
+- **countries list** - As a user I want to see all the events available so that I can choose which ones I want to attend
+- **countries create** - As a user I want to create an event so that I can invite others to attend
+- **countries detail** - As a user I want to see the event details and attendee list of one event so that I can decide if I want to attend 
 
 ## Backlog
 
