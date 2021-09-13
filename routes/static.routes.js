@@ -17,5 +17,9 @@ router.get('/landing-page', (req, res) => {
 	res.render('static/landing-page');
 });
 
+router.get('/map', (req, res) => {
+	res.render('static/map');
+});
+
 
 module.exports = router;

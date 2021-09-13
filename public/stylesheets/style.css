@@ -188,3 +188,9 @@ h1 {
   outline: none;
   letter-spacing: 1px;
 }
+
+
+#map {
+  width: 100%;
+  height: 100vh;
+}
