@@ -52,7 +52,7 @@ h1 {
   max-width: 250%;
   position: absolute;
   left: -97%;
-  top: -1950%; 
+  top: -500%; 
   transform: translate(-50%, -50%);
   animation:spin 80s linear infinite;
   z-index: 1;
@@ -69,18 +69,32 @@ h1 {
 
 .stretch2 {
   position: fixed;
+  top: 180;
   z-index: 2;
   width: 500px;
   height: 500px;
-  margin-bottom: 250px;
+ 
 }
+
+
 
 .landing-page9{
   position: relative; 
+  left: 800;
+  top: 100;
   z-index: 5;
-  margin-left: 80%;
+  display: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: space-around;
+  font-size: 25px;
 }
 
+#button-left{
+  margin-right: 50px;
+}
 
 
 .spin {
