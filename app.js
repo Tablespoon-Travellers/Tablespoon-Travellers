@@ -27,6 +27,9 @@ app.use("/private", isLoggedIn, privateRoutes);
 const countriesRoutes = require("./routes/country.routes");
 app.use("/countries", isLoggedIn, countriesRoutes);
 
+app.get("/", (req, res) => {
+	res.render('static/landing-page');
+})
 
 const staticRoutes = require("./routes/static.routes");
 app.use(
