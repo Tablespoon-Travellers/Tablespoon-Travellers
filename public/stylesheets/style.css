@@ -6,6 +6,10 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   overflow: hidden;
 }
+.navbar {
+  position: relative;
+  z-index: 0;
+}
 
 nav {
   background-color: #00b7ff;
@@ -18,6 +22,7 @@ nav a {
   color: white;
   margin: 0 20px;
   font-size: 1.5rem;
+  
 }
 
 main {
@@ -41,23 +46,16 @@ h1 {
   height: 175px;
 }
 
-.stretch-parent {
-	height: 200vh;
-}
 
 /* For landing page background and logo*/
-.stretch {
-  width: 100000%;
-  height: 80vh;
+.stretch{
+  max-width: 250%;
   position: absolute;
-  /* top: 200%; */
-  left: -20%;
-  /* transform: translate(-10%, -10%); */
-
-  background-position:25% 25%;
-  background-size:cover;
-  animation: spin 75s linear infinite;
-  object-fit: none;
+  left: -97%;
+  top: -1950%; 
+  transform: translate(-50%, -50%);
+  animation:spin 80s linear infinite;
+  z-index: 1;
 }
 
 @keyframes spin {
@@ -70,17 +68,20 @@ h1 {
 }
 
 .stretch2 {
-  /* position: absolute; */
-  z-index: 1;
+  position: fixed;
+  z-index: 2;
   width: 500px;
   height: 500px;
-  /* margin-top: 160px;
-  margin-left: 405px; */
+  margin-bottom: 250px;
 }
 
-.spin * {
-  box-sizing: border-box;
+.landing-page9{
+  position: relative; 
+  z-index: 5;
+  margin-left: 80%;
 }
+
+
 
 .spin {
   margin: 0;
