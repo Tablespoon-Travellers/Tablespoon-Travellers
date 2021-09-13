@@ -52,8 +52,9 @@ router.post('/signup', isNotLoggedIn, (req, res) => {
 					.then((newUser) => {
 
 						console.log(newUser);
+						req.session.currentUser = newUser;
 						//Once created, redirect
-						res.redirect('/auth/login');
+						res.redirect('/private/profile');
 					})
 					.catch((err) => console.log(err));
 			}
