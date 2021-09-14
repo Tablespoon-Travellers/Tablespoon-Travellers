@@ -1,8 +1,6 @@
 const express = require('express');
-
-const Country = require("../models/Country.model");
-
 const router = express.Router();
+
 const Country = require("../models/Country.model");
 
 router.get('/404', (req, res) => {
@@ -18,18 +16,6 @@ router.get('/flap', (req, res) => {
     .find()
     .then((allCountries) => {
         res.render('static/flap', {countries: JSON.stringify(allCountries)});
-    })
-    .catch((error) => { 
-        console.log("Something bad happened:", error)
-        throw error
-    });
-});
-
-router.get('/spin', (req, res) => {
-    Country
-    .find()
-    .then((allCountries) => {
-        res.render('Wheel spinner', {countries: JSON.stringify(allCountries)});
     })
     .catch((error) => { 
         console.log("Something bad happened:", error)
