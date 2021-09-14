@@ -101,9 +101,9 @@ attendees: [ObjectId<User>]
 ## Links
 
 
-### Slides
+### Wireframes
 
-[Wireframes Link](https://excalidraw.com/#room=72776afd85ccea581527,Ls_NTTRTs034isEdKU9VzA)
+[Wireframes Link](https://whimsical.com/mathijs-and-jesse-project-2-SiS68mSSwMX9QFswLDdKbZ)
 
 
 ### Trello
