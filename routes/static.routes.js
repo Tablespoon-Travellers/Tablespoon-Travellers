@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const Country = require("../models/Country.model");
 
 router.get('/404', (req, res) => {
 	res.render('static/404');
