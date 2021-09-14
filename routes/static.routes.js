@@ -9,6 +9,18 @@ router.get('/500', (req, res) => {
 	res.render('static/500');
 });
 
+router.get('/flap', (req, res) => {
+    Country
+    .find()
+    .then((allCountries) => {
+        res.render('static/flap', {countries: JSON.stringify(allCountries)});
+    })
+    .catch((error) => { 
+        console.log("Something bad happened:", error)
+        throw error
+    });
+});
+
 router.get('/spin', (req, res) => {
 	res.render('Wheel spinner');
 });
