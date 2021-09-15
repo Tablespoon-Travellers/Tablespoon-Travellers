@@ -49,10 +49,11 @@ h1 {
 
 /* For landing page background and logo*/
 .stretch{
-  max-width: 250%;
+  max-width: 4500px;
+  max-height: 200000px;
   position: absolute;
   left: -97%;
-  top: -500%; 
+  top: -450%; 
   transform: translate(-50%, -50%);
   animation:spin 80s linear infinite;
   z-index: 1;
@@ -78,11 +79,11 @@ h1 {
 
 .landing-page9{
   position: relative; 
-  left: 800;
+  left: 600;
   top: 100;
   z-index: 5;
-  display: column;
-	flex-direction: row;
+  display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;

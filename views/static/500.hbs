@@ -1,19 +1,44 @@
 <section class="hero">
   <div class="hero-body">
     <p class="title">
-      500: Internal Service Error
+      500:
+      {{#if message}}
+      {{message}}
+      {{else}}
+      Internal Service Error
+      {{/if}}
     </p>
     <p class="subtitle">
       We did an oops. Soz
     </p>
-    <p>
+    {{#if error.status}}
+    <p class="subtitle">
+      Status
+    </p>
+    <code class="block">
+    {{error.status}}
+    </code>
+    {{/if}}
+    {{#if error.stack}}
+    <p class="subtitle">
+      Stack trace
+    </p>
+    <code class="block">
+    {{error.stack}}
+    </code>
+    {{/if}}
+    <p class="block">
         Maybe try again in a bit. 
     </p>
-    <p>
+    <p class="block">
         Here's a kitten to keep you company until then. 
     </p>
-    <p>
+    <p class="block">
         <img src="/images/500.jpeg" />
     </p>
   </div>
 </section>
+
+{{!-- <h1 class="title is-size-1">{{message}}</h1>
+<h2>{{error.status}}</h2>
+<pre>{{error.stack}}</pre> --}}

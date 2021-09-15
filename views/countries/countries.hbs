@@ -1,6 +1,20 @@
-<h1 class="title is-size-1">Countries</h1>
-<br>
+<div class="columns is-vcentered">
+  <div class="column">
+    <h1 class="title is-size-1">Countries</h1>
+  </div>
+  <div class="column is-narrow is-pulled-right">
+    <a href="/countries/create">
+      <button class="button is-success">
+        <span class="icon mr-1" style="font-size: 24px;">
+          <ion-icon name="add-outline"></ion-icon>
+        </span>
+        Create New Country
+      </button>
+    </a>
+  </div>
+</div>
 
+<<<<<<< HEAD
 <a href="/countries/create">
   <button class="btn btn-success">Create New Country</button>
 </a>
@@ -12,3 +26,14 @@
 </h2>
 </a>
 {{/each}}
+=======
+<div class="box">
+  {{#each allCountries}}
+    <div class="block">
+      <a href="/countries/{{this._id}}" class="button is-warning is-large is-fullwidth">
+        {{this.name}}
+      </a>
+    </div>
+  {{/each}}
+</div>
+>>>>>>> 4e790de0b3087245cf548c0bb92187dcc50b9776
