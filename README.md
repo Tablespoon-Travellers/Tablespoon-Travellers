@@ -2,7 +2,7 @@
 
 ## Description
 
-Describe your project in one/two lines.
+An app that lets you travel with your tastebuds and experience the world through food.
  
 ## User Stories
 
