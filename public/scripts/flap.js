@@ -1,31 +1,25 @@
 // Set up flaps ////////////////////////////////////////////
-speed = .2; // seconds
+speed = 0.2; // seconds
 
-// const startCountry = window.countries[Math.floor(Math.random() * window.countries.length)];
-// let endCountry;
-// while (true) {
-    const endCountry = window.countries[Math.floor(Math.random() * window.countries.length)];
-    // // TODO: This will spin if 
-    // if (endCountry !== startCountry) {
-    //     break
-    // }
-// }
-beginStr = "Kazakhstan".toUpperCase().split("");
+const endCountry =
+  window.countries[Math.floor(Math.random() * window.countries.length)];
+beginStr = "Welcome".toUpperCase().split("");
 endStr = endCountry.name.toUpperCase().split("");
-const link = document.getElementById("link")
-link.href = `/countries/${endCountry._id}`
+const link = document.getElementById("link");
+link.href = `/countries/${endCountry._id}`;
 // A-Z, 0-9, spaces only
 
-amountOfFlaps = (beginStr.length >= endStr.length) ? beginStr.length : endStr.length;
+amountOfFlaps =
+  beginStr.length >= endStr.length ? beginStr.length : endStr.length;
 
 div = document.querySelector(".center");
 html = "";
 for (var x = 0; x < amountOfFlaps; x++) {
-  html += '<div class=splitflap><div class="top"></div><div class="bottom"></div><div class="nextHalf"></div><div class="nextFull"></div></div>';
+  html +=
+    '<div class=splitflap><div class="top"></div><div class="bottom"></div><div class="nextHalf"></div><div class="nextFull"></div></div>';
 }
 
 div.innerHTML = html;
-
 
 // Set up more stuff ///////////////////////////////////////
 a1 = document.querySelectorAll(".top");
@@ -38,57 +32,80 @@ for (var x = 0; x < a1.length; x++) {
   b2[x].style.animationDuration = speed + "s";
 }
 
-
 // And even more ///////////////////////////////////////////
-char = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
-        'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
-        'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ' '];
+char = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "0",
+  " ",
+];
 
-strCount = [], flag = [];
+(strCount = []), (flag = []);
 
 for (var x = 0; x < amountOfFlaps; x++) {
-  
-  if (beginStr.length != amountOfFlaps)
-    {
-      for (var x = 0; x < amountOfFlaps - beginStr.length; x++)
-        {
-          beginStr.push(" ");
-        }
+  if (beginStr.length != amountOfFlaps) {
+    for (var x = 0; x < amountOfFlaps - beginStr.length; x++) {
+      beginStr.push(" ");
     }
-  else if (endStr.length != amountOfFlaps)
-    {
-      for (var x = 0; x < amountOfFlaps - endStr.length; x++)
-        {
-          endStr.push(" ");
-        }
+  } else if (endStr.length != amountOfFlaps) {
+    for (var x = 0; x < amountOfFlaps - endStr.length; x++) {
+      endStr.push(" ");
     }
+  }
 }
-for (var x = 0; x<amountOfFlaps; x++){
+for (var x = 0; x < amountOfFlaps; x++) {
   strCount[x] = char.indexOf(beginStr[x]);
-  flag[x] = false, flag2 = true;
+  (flag[x] = false), (flag2 = true);
 }
 
 // Flip them flaps /////////////////////////////////////////
-setInterval(function() {
+function flap() {
   for (var x = 0; x < amountOfFlaps; x++) {
-
     if (b1[x].innerHTML == endStr[x]) dontFlipIt(x);
     else flipIt(x);
-
-    if (flag.every(function(e) {
-        return e
-      }) && flag2) flag2 = false, changeDestination();
   }
-
-}, speed * 1000);
-
+}
+setInterval(flap, speed * 1000);
 
 ////////////////////////////////////////////////////////////
 // Flap flipping functions /////////////////////////////////
 ////////////////////////////////////////////////////////////
 function flipIt(x) {
-  a1[x].innerHTML = char[(strCount[x] == 0) ? char.length - 1 : strCount[x] - 1];
-  a2[x].innerHTML = char[(strCount[x] == 0) ? char.length - 1 : strCount[x] - 1];
+  a1[x].innerHTML = char[strCount[x] == 0 ? char.length - 1 : strCount[x] - 1];
+  a2[x].innerHTML = char[strCount[x] == 0 ? char.length - 1 : strCount[x] - 1];
   b1[x].innerHTML = char[strCount[x]];
   b2[x].innerHTML = char[strCount[x]];
 
@@ -108,17 +125,6 @@ function dontFlipIt(x) {
   a2[x].classList.remove("flip2");
   a2[x].style.backgroundColor = "#3BB6eB";
   b2[x].style.backgroundColor = "#3BB6eB";
-  a1[x].innerHTML = char[(strCount[x] == 0) ? char.length - 1 : strCount[x] - 1];
-  a2[x].innerHTML = char[(strCount[x] == 0) ? char.length - 1 : strCount[x] - 1];
-}
-
-function changeDestination() {
-  setTimeout(function() {
-    flag.fill(false);
-    flag2 = true;
-    
-    var tempArr = endStr.slice();
-    endStr = beginStr.slice();
-    beginStr = tempArr.slice();
-  }, 3000);
+  a1[x].innerHTML = char[strCount[x] == 0 ? char.length - 1 : strCount[x] - 1];
+  a2[x].innerHTML = char[strCount[x] == 0 ? char.length - 1 : strCount[x] - 1];
 }

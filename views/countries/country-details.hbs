@@ -6,6 +6,42 @@
     <p class="subtitle">
       {{country.description}}
     </p>
+    {{#if drink}}
+      <p class="subtitle">
+        Recommended cocktail:
+        {{country.drinkName}}
+        (
+        <a href="{{drink.content.details.directionsUrl}}">
+          How to make it
+        </a>
+        )
+      </p>
+    {{/if}}
+    <div id="image">
+      <img src="{{country.imageUrl}}" />
+    </div>
+    {{#if playlist}}
+      <div id="playlist">
+        <h2 class="subtitle is-size-2">
+          Spotify Playlist:
+          {{playlist.name}}
+        </h2>
+        <a href="https://open.spotify.com/playlist/{{country.playlistId}}">
+          Open playlist
+        </a>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/{{country.playlistId}}"
+          width="100%"
+          height="80"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </div>
+    {{/if}}
+  </div>
+  <div class="column is-6">
+    {{#if recipe}}
     <div id="recipe" class="box">
       <div class="columns">
         <div class="column is-12">
@@ -42,63 +78,6 @@
         </div>
       </div>
     </div>
-    {{#if playlist}}
-      <div id="playlist">
-        <h2 class="subtitle is-size-2">
-          Spotify Playlist:
-          {{playlist.name}}
-        </h2>
-        <a href="https://open.spotify.com/playlist/{{country.playlistId}}">
-          Open playlist
-        </a>
-        <iframe
-          src="https://open.spotify.com/embed/playlist/{{country.playlistId}}"
-          width="100%"
-          height="80"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
-      </div>
-    {{/if}}
-  </div>
-  <div class="column is-6">
-    <div id="image">
-      <img src="{{country.imageUrl}}" />
-    </div>
-    {{#if drink}}
-      <div id="drink" class="box">
-        <div class="columns">
-          <div class="column is-12">
-            <h2 class="subtitle is-size-2">Drink Pairing:
-              {{country.drinkName}}</h2>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-12">
-            Time:
-            {{drink.content.details.totalTime}}
-          </div>
-        </div>
-        <div class="columns is-centered">
-          <div class="column is-narrow box">
-            <img
-              src="{{drink.content.details.images.0.hostedLargeUrl}}"
-              style="width: 100%;"
-            />
-          </div>
-        </div>
-        <div class="field is-grouped">
-          <p class="control">
-            <a
-              class="button is-link is-outlined"
-              href="{{drink.content.details.directionsUrl}}"
-            >
-              Directions
-            </a>
-          </p>
-        </div>
-      </div>
     {{/if}}
   </div>
 </div>

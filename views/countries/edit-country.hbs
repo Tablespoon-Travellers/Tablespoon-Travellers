@@ -1,74 +1,80 @@
-<h1 class="title is-size-1">{{title}}</h1>
+<div class="columns">
+  <div class="column is-6">
+    <h1 class="title is-size-1">{{title}}</h1>
+    <form action="{{action}}" method="POST">
+      <label class="label" for="">Country</label>
+      <div class="control pb-4">
+        <input class="input" type="text" name="name" value="{{country.name}}" />
+        <p class="help">Name of country</p>
+      </div>
 
-<form action="{{action}}" method="POST">
-  <label class="label" for="">Country</label>
-  <div class="control">
-    <input class="input" type="text" name="name" value="{{country.name}}" />
-    <p class="help">Name of country</p>
-  </div>
+      <label class="label" for="">Description</label>
+      <div class="control pb-4">
+        <input
+          class="input"
+          type="text"
+          name="description"
+          value="{{country.description}}"
+        />
+        <p class="help">Short description of this country</p>
+      </div>
 
-  <label class="label" for="">Description</label>
-  <div class="control">
-    <input
-      class="input"
-      type="text"
-      name="description"
-      value="{{country.description}}"
-    />
-    <p class="help">Short description of this country</p>
-  </div>
+      <label class="label" for="">Playlist</label>
+      <div class="control pb-4">
+        <input
+          class="input"
+          type="text"
+          name="playlistId"
+          value="{{country.playlistId}}"
+        />
+        <p class="help">Spotify playlist URL you think represents this country</p>
+      </div>
 
-  <label class="label" for="">Playlist</label>
-  <div class="control">
-    <input
-      class="input"
-      type="text"
-      name="playlistId"
-      value="{{country.playlistId}}"
-    />
-    <p class="help">Spotify playlist URL you think represents this country</p>
-  </div>
+      <label class="label" for="">Recommended Dish</label>
+      <div class="control pb-4">
+        <input
+          class="input"
+          type="text"
+          name="dishName"
+          value="{{country.dishName}}"
+        />
+        <p class="help">Your favourite dish from this country</p>
+      </div>
 
-  <label class="label" for="">Recommended Dish</label>
-  <div class="control">
-    <input
-      class="input"
-      type="text"
-      name="dishName"
-      value="{{country.dishName}}"
-    />
-    <p class="help">Your favourite dish from this country</p>
-  </div>
+      <label class="label" for="">Recommended Cocktail</label>
+      <div class="control pb-4">
+        <input
+          class="input"
+          type="text"
+          name="drinkName"
+          value="{{country.drinkName}}"
+        />
+        <p class="help">Your favourite cocktail from this country</p>
+      </div>
 
-  <label class="label" for="">Recommended Drink</label>
-  <div class="control">
-    <input
-      class="input"
-      type="text"
-      name="drinkName"
-      value="{{country.drinkName}}"
-    />
-    <p class="help">Your favourite drink from this country</p>
-  </div>
+      <label class="label" for="">Image</label>
+      <div class="control pb-4">
+        <input
+          class="input"
+          type="text"
+          name="imageUrl"
+          value="{{country.imageUrl}}"
+        />
+        <p class="help">The URL of a landscape image you think represents this
+          country</p>
+      </div>
 
-  <label class="label" for="">Image</label>
-  <div class="control">
-    <input
-      class="input"
-      type="text"
-      name="imageUrl"
-      value="{{country.imageUrl}}"
-    />
-    <p class="help">The URL of a landscape image you think represents this
-      country</p>
+      <div class="field is-grouped is-pulled-right">
+        <div class="control">
+          <a class="button is-danger is-light" href="/">Cancel</a>
+        </div>
+        <div class="control">
+          <button class="button is-success" type="submit">{{submit}}</button>
+        </div>
+      </div>
+    </form>
   </div>
-
-  <div class="field is-grouped is-pulled-right">
-    <div class="control">
-      <a class="button is-danger is-light" href="/">Cancel</a>
-    </div>
-    <div class="control">
-      <button class="button is-success" type="submit">{{submit}}</button>
-    </div>
+  <div class="column is-6 is-flex is-justify-content-center">
+    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=450&q=80" />
   </div>
-</form>
+</div>

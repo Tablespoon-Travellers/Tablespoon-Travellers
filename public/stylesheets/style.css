@@ -1,21 +1,32 @@
+@font-face {
+  font-family: machina;
+  src: url("/fonts/PPNeueMachina-Regular.otf");
+}
+
 * {
   margin: 0;
 }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Montserat", "Lucida Grande", Helvetica, Arial, sans-serif;
   overflow: hidden;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font: 14px "machina", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
 .navbar {
-  position: relative;
+  /* position: relative; */
+  font-family: "machina", "Lucida Grande", Helvetica, Arial, sans-serif;
   z-index: 0;
 }
 
-nav {
+/* nav {
   background-color: #00b7ff;
   width: 100%;
   padding: 10px 30px;
-}
+} */
 
 .navbar.is-danger {
   background-color: rgb(251, 202, 203);
@@ -43,9 +54,9 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
+  /* text-decoration: none;
   color: white;
-  margin: 0 20px;
+  margin: 0 20px; */
   font-size: 1.5rem;
   
 }
@@ -57,7 +68,7 @@ main {
 main > * {
   margin: 10px;
 }
-
+/* 
 h1 {
   color: 15px;
 }
@@ -69,7 +80,7 @@ h1 {
 .room-img {
   width: 300px;
   height: 175px;
-}
+} */
 
 
 /* For landing page background and logo*/

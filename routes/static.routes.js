@@ -15,7 +15,7 @@ router.get('/flap', (req, res) => {
     Country
     .find()
     .then((allCountries) => {
-        res.render('static/flap', {countries: JSON.stringify(allCountries)});
+        res.render('static/flap', {countries: JSON.stringify(allCountries), layout: false});
     })
     .catch((error) => { 
         console.log("Something bad happened:", error)
