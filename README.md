@@ -2,7 +2,7 @@
 
 ## Description
 
-Describe your project in one/two lines.
+An app that lets you travel with your tastebuds and experience the world through food.
  
 ## User Stories
 
@@ -12,7 +12,7 @@ Describe your project in one/two lines.
 - **sign up** - As a user I want to sign up on the webpage so that I can see all the events that I could attend
 - **login** - As a user I want to be able to log in on the webpage so that I can get back to my account
 - **logout** - As a user I want to be able to log out from the webpage so that I can make sure no one will access my account
-- **countries list** - As a user I want to see all the events available so that I can choose which ones I want to attend
+- **countries list** - As a user I want to see all the countries available so that I can choose which ones I want to attend
 - **countries create** - As a user I want to create an event so that I can invite others to attend
 - **countries detail** - As a user I want to see the event details and attendee list of one event so that I can decide if I want to attend 
 
@@ -34,7 +34,6 @@ Geo Location:
 
 Homepage
 - ...
-
 
 ## ROUTES:
 
@@ -105,21 +104,16 @@ attendees: [ObjectId<User>]
 
 [Wireframes Link](https://whimsical.com/mathijs-and-jesse-project-2-SiS68mSSwMX9QFswLDdKbZ)
 
-
 ### Trello
 
 [Miro Board](https://miro.com/app/board/o9J_lxn1n94=/)
 
 ### Git
 
-The url to your repository and to your deployed project
+[Repository Link](https://github.com/Tablespoon-Travellers/Tablespoon-Travellers)
 
-[Repository Link](http://github.com)
-
-[Deploy Link](http://heroku.com)
+[Deploy Link](https://tablespoon-travellers.herokuapp.com/)
 
 ### Slides
 
-The url to your presentation slides
-
-[Slides Link]()
+[Slides Link](https://docs.google.com/presentation/d/1qkwZ_TNYzlOh7jphpve0BpYQ7aXOvjFgTHpo2DQi5gU/edit?usp=sharing)

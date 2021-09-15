@@ -15,7 +15,7 @@
 
 <form action="{{action}}" method="POST">
 
-  <label class="label" for="">Name of Country</label>
+  <label class="label" for="">Country</label>
   <div class="control">
     <input class="input" type="text" name="name" value="{{country.name}}" />
     <p class="help">Name of country</p>
@@ -30,11 +30,11 @@
       name="description"
       value="{{country.description}}"
     />
-    <p class="help">Short description of country</p>
+    <p class="help">Short description of this country</p>
   </div>
 
   <br />
-  <label class="label" for="">Playlist ID</label>
+  <label class="label" for="">Playlist</label>
   <div class="control">
     <input
       class="input"
@@ -42,11 +42,11 @@
       name="playlistId"
       value="{{country.playlistId}}"
     />
-    <p class="help">The number at the end of the Spotify playlist URL</p>
+    <p class="help">Spotify playlist URL you think represents this country</p>
   </div>
 
   <br />
-  <label class="label" for="">National Dish</label>
+  <label class="label" for="">Recommended Dish</label>
   <div class="control">
     <input
       class="input"
@@ -66,7 +66,8 @@
       name="imageUrl"
       value="{{country.imageUrl}}"
     />
-    <p class="help">The url of a landscape image you think represents this country</p>
+    <p class="help">The URL of a landscape image you think represents this
+      country</p>
   </div>
 
   <br />
