@@ -17,8 +17,29 @@ nav {
   padding: 10px 30px;
 }
 
+.navbar.is-danger {
+  background-color: rgb(251, 202, 203);
+  color: rgb(42, 74 ,217);
+}
 .navbar.is-danger .navbar-start>.navbar-item {
-  color: rgb(42 74 217);
+  color: rgb(42, 74 ,217);
+}
+.navbar.is-danger .navbar-end>.navbar-item {
+  color: rgb(42, 74 ,217);
+}
+
+.navbar.is-danger .navbar-start>a.navbar-item:hover {
+  background-color: rgb(251, 159, 160);
+  color: rgb(2, 41, 216);
+}
+.navbar.is-danger .navbar-end>a.navbar-item:hover {
+  background-color: rgb(251, 159, 160);
+  color: rgb(2, 41, 216);
+}
+
+.navbar.is-danger .navbar-brand>a.navbar-item:hover {
+  background-color: rgb(251, 159, 160);
+  color: rgb(2, 41, 216);
 }
 
 nav a {
