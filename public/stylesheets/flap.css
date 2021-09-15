@@ -28,7 +28,7 @@
   position: relative;
   height: 50%;
   width: 100%;
-  background-color: hotpink;
+  background-color: #F4CCCC;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
   z-index: 0;
@@ -46,7 +46,7 @@ div {
   border-radius: 10px 10px 10px 10px;
   z-index: -1;
   background-color: black;
-  background-image: linear-gradient(rgba(59, 182, 235, 0), #3bb6eb);
+  background-image: linear-gradient(rgba(23, 39, 220, 0), #0430DB);
   transform-origin: center;
 }
 
@@ -59,7 +59,7 @@ div {
   border-radius: 10px 10px 0 0;
   z-index: 2;
   background-color: black;
-  background-image: linear-gradient(hotpink, rgba(59, 182, 235, 0));
+  background-image: linear-gradient(#F4CCCC, rgba(59, 182, 235, 0));
   transform-origin: bottom;
 }
 
@@ -67,7 +67,7 @@ div {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: hotpink;
+  background-color: #F4CCCC;
   margin-top: -50%;
   border-radius: 10px 10px 10px 10px;
   z-index: -3;
@@ -86,7 +86,7 @@ div {
 @keyframes flip1 {
   0% {
     transform: rotateX(0deg);
-    background-color: hotpink;
+    background-color: #F4CCCC;
   }
   50% {
     transform: rotateX(90deg);
@@ -106,6 +106,6 @@ div {
   }
   100% {
     transform: rotateX(0deg);
-    background-color: hotpink;
+    background-color: #F4CCCC;
   }
 }

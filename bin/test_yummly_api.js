@@ -8,7 +8,7 @@ async function main() {
   try {
     const searchResp = await client.search("bobotie");
     const results = searchResp.data;
-    console.log(JSON.stringify(results.feed[0]))
+    console.log(JSON.stringify(results.feed[0]));
   } catch (error) {
     console.log(error);
   }
