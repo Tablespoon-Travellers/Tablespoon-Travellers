@@ -104,21 +104,16 @@ attendees: [ObjectId<User>]
 
 [Wireframes Link](https://whimsical.com/mathijs-and-jesse-project-2-SiS68mSSwMX9QFswLDdKbZ)
 
-
 ### Trello
 
 [Miro Board](https://miro.com/app/board/o9J_lxn1n94=/)
 
 ### Git
 
-The url to your repository and to your deployed project
+[Repository Link](https://github.com/Tablespoon-Travellers/Tablespoon-Travellers)
 
-[Repository Link](http://github.com)
-
-[Deploy Link](http://heroku.com)
+[Deploy Link](https://tablespoon-travellers.herokuapp.com/)
 
 ### Slides
-
-The url to your presentation slides
 
 [Slides Link](https://docs.google.com/presentation/d/1qkwZ_TNYzlOh7jphpve0BpYQ7aXOvjFgTHpo2DQi5gU/edit?usp=sharing)
