@@ -1,44 +1,48 @@
-<section class="hero">
+<section class="hero has-text-centered">
   <div class="hero-body">
-    <p class="title">
-      500:
-      {{#if message}}
-      {{message}}
-      {{else}}
-      Internal Service Error
-      {{/if}}
-    </p>
-    <p class="subtitle">
-      We did an oops. Soz
-    </p>
-    {{#if error.status}}
-    <p class="subtitle">
-      Status
-    </p>
-    <code class="block">
-    {{error.status}}
-    </code>
-    {{/if}}
-    {{#if error.stack}}
-    <p class="subtitle">
-      Stack trace
-    </p>
-    <code class="block">
-    {{error.stack}}
-    </code>
-    {{/if}}
-    <p class="block">
-        Maybe try again in a bit. 
-    </p>
-    <p class="block">
-        Here's a kitten to keep you company until then. 
-    </p>
-    <p class="block">
-        <img src="/images/500.jpeg" />
-    </p>
+    <div class="columns is-centered">
+      <div class="column is-12">
+        <p class="title">
+          500:
+          {{#if message}}
+            {{message}}
+          {{else}}
+            Internal Service Error
+          {{/if}}
+        </p>
+        <p class="subtitle">
+          We did an oops. Soz
+        </p>
+        {{#if error.status}}
+          <p class="subtitle">
+            Status
+          </p>
+          <code class="block">
+            {{error.status}}
+          </code>
+        {{/if}}
+        {{#if error.stack}}
+          <p class="subtitle">
+            Stack trace
+          </p>
+          <code class="block">
+            {{error.stack}}
+          </code>
+        {{/if}}
+        <p class="block">
+          Maybe try again in a bit.
+        </p>
+        <p class="block">
+          Here's a kitten to keep you company until then.
+        </p>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-6">
+        <figure class="image">
+          <img src="/images/500.jpeg" />
+        </figure>
+      </div>
+    </div>
   </div>
 </section>
-
-{{!-- <h1 class="title is-size-1">{{message}}</h1>
-<h2>{{error.status}}</h2>
-<pre>{{error.stack}}</pre> --}}

@@ -20,6 +20,9 @@ class Yummly {
   }
 
   async search(q) {
+    if (!q) {
+      return undefined
+    }
     const resp = await this.client.get(`/feeds/search`, { params: { q: q.replace(' ', '%20') } });
     if (resp.status !== 200) {
         throw Exception("Uh oh!")
