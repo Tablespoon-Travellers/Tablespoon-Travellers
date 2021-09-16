@@ -23,6 +23,7 @@
             <a
               class="button is-link is-outlined"
               href="{{recipe.content.details.directionsUrl}}"
+              target="_blank"
             >
               Directions
             </a>
@@ -68,12 +69,12 @@
     {{#if drink}}
       <h3 class="subtitle is-size-3 block mb-1">
         Recommended drink:
-        <a href="{{drink.content.details.directionsUrl}}">
+        <a href="{{drink.content.details.directionsUrl}}" target="_blank">
           {{country.drinkName}}
         </a>
       </h3>
     {{/if}}
-    <div>
+    {{!-- <div>
       {{#if country.created_by.username }}
       {{/if}}
       Created by
@@ -87,7 +88,7 @@
       Updated by
       {{country.updated_by.username}}
       {{/if}}
-    </div>
+    </div> --}}
     <div>
       <a class="button is-link is-rounded" href="/countries/{{country._id}}/edit">
         Edit this country
