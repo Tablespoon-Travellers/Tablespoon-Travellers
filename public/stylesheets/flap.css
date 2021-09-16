@@ -119,3 +119,18 @@ div {
   height: 100vh;
   z-index: -10;
 }
+
+.center {
+  margin-top: 120px;
+}
+
+#HomepageText {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#ButtonHomepage {
+  position: relative;
+  top: 200px;
+  left: 820px;
+}
