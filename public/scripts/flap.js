@@ -26,6 +26,8 @@ a1 = document.querySelectorAll(".top");
 a2 = document.querySelectorAll(".bottom");
 b1 = document.querySelectorAll(".nextFull");
 b2 = document.querySelectorAll(".nextHalf");
+flapButton = document.getElementById("buttonFlap")
+flapButton.onclick = startFlapping
 
 for (var x = 0; x < a1.length; x++) {
   a2[x].style.animationDuration = speed + "s";
@@ -98,7 +100,25 @@ function flap() {
     else flipIt(x);
   }
 }
-setInterval(flap, speed * 1000);
+function startFlapping() {
+  setInterval(flap, speed * 1000);
+}
+for (var x = 0; x < amountOfFlaps; x++) {
+  a1[x].innerHTML = char[strCount[x]];
+  a2[x].innerHTML = char[strCount[x]];
+  b1[x].innerHTML = char[strCount[x]];
+  b2[x].innerHTML = char[strCount[x]];
+
+  // a2[x].classList.remove("flip1");
+  a2[x].offsetWidth = a2[x].offsetWidth;
+  // a2[x].classList.add("flip1");
+  // b2[x].classList.remove("flip2");
+  b2[x].offsetWidth = b2[x].offsetWidth;
+  // b2[x].classList.add("flip2");
+
+  if (strCount[x] > char.length - 2) strCount[x] = 0;
+  else strCount[x]++;
+}
 
 ////////////////////////////////////////////////////////////
 // Flap flipping functions /////////////////////////////////

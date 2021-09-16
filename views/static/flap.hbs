@@ -1,55 +1,39 @@
-<html>
-<head>
-<title>{{title}}</title>
-<link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-<link rel="stylesheet" href="/stylesheets/style.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
 <link rel="stylesheet" href="/stylesheets/flap.css" />
-</head>
-<body>
-
-<div class="is-overlay">
-    {{>navbar}}
-</div>
-
-  <section id="HomepageText" class="section is-medium">
+<section id="HomepageText" class="section is-medium">
   <h1 class="title">Generate a random country!</h1>
   <h2 class="subtitle">
-    A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+    A simple container to divide your page into
+    <strong>sections</strong>, like the one you're currently reading.
   </h2>
-   <div class="container">
-            <div class="columns">
-                <div class="column is-12">
-                    <a id="link">
-                    <div class="center">
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
+  <div class="container">
+    <div class="columns">
+      <div class="column is-12">
+        <a id="link">
+          <div class="center">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
-<button id="ButtonHomepage" class="button is-rounded">Try again for another country</button>  
+<div class="field is-grouped">
+  <p class="control">
+    <button id="buttonFlap" class="button is-rounded">
+      Spin a random country
+    </button>
+  </p>
+  <p class="control">
+    <a id="ButtonHomepage" class="button is-rounded" href="/random/">
+      Try again for another country
+    </a>
+  </p>
+</div>
 
- <script type="module">
-  import confetti from 'https://cdn.skypack.dev/canvas-confetti';
-  confetti();
-</script> 
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="/scripts/script.js"></script>
+<script type="module">
+  import confetti from 'https://cdn.skypack.dev/canvas-confetti'; confetti();
+</script>
 <script>
-    window.countries = {{{ countries }}}
+  window.countries =
+  {{{countries}}}
 </script>
 <script src="/scripts/flap.js"></script>
-</body>
-</html>

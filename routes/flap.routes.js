@@ -8,7 +8,6 @@ router.get("/", (req, res) => {
     .then((allCountries) => {
       res.render("static/flap", {
         countries: JSON.stringify(allCountries),
-        layout: false,
       });
     })
     .catch((error) => {
