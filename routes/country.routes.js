@@ -81,17 +81,6 @@ router.get("/", (req, res) => {
   });
 });
 
-// gets a random country
-router.get("/-/show-me-a-random-country", (req, res) => {
-  Country.find()
-    .then((allCountries) => {
-      const randomCountry =
-        allCountries[Math.floor(Math.random() * allCountries.length)];
-      res.redirect(`/countries/${randomCountry._id}`);
-    })
-    .catch((error) => console.log(error));
-});
-
 // creates a country NEEDS TO CHANGE TO SUPPORT RECIPES
 router.post("/", (req, res) => {
   const { name, playlistId, dishName, drinkName, imageUrl } = req.body;
@@ -104,7 +93,7 @@ router.post("/", (req, res) => {
     created_by: req.session.currentUser._id,
     updated_by: req.session.currentUser._id,
   })
-    .then((newCountry) => res.redirect("/countries/"))
+    .then((newCountry) => res.redirect(`/countries/${newCountry._id}`))
     .catch((error) => console.log(error));
 });
 
