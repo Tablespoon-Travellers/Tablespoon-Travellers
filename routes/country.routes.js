@@ -14,6 +14,7 @@ router.get("/create", (req, res) => {
     action: "/countries/",
     title: "Add New Country",
     submit: "Create",
+    user: req.session.currentUser,
   });
 });
 
@@ -60,6 +61,7 @@ router.get("/:id", (req, res) => {
         recipe,
         drink,
         playlist: playlist,
+        user: req.session.currentUser,
       });
     })
     .catch((error) => console.log(error));
@@ -75,7 +77,7 @@ router.get("/:id/delete", (req, res) => {
 // finds all countries
 router.get("/", (req, res) => {
   Country.find().then((allCountries) => {
-    res.render("countries/countries", { allCountries });
+    res.render("countries/countries", { allCountries, user: req.session.currentUser });
   });
 });
 
@@ -92,10 +94,9 @@ router.get("/-/show-me-a-random-country", (req, res) => {
 
 // creates a country NEEDS TO CHANGE TO SUPPORT RECIPES
 router.post("/", (req, res) => {
-  const { name, description, playlistId, dishName, drinkName, imageUrl } = req.body;
+  const { name, playlistId, dishName, drinkName, imageUrl } = req.body;
   Country.create({
     name,
-    description,
     dishName,
     drinkName,
     imageUrl,
@@ -117,15 +118,15 @@ router
           action: `/countries/${country._id}/edit`,
           title: "Update Country",
           submit: "Update",
+          user: req.session.currentUser,
         });
       })
       .catch((error) => console.log(error));
   })
   .post((req, res) => {
-    const { name, description, playlistId, dishName, drinkName, imageUrl } = req.body;
+    const { name, playlistId, dishName, drinkName, imageUrl } = req.body;
     Country.findByIdAndUpdate(req.params.id, {
       name,
-      description,
       dishName,
       drinkName,
       imageUrl,

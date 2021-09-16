@@ -2,7 +2,6 @@ const { Schema, model } = require('mongoose');
 
 const countrySchema = new Schema({
 	name: { type: String, unique: true, required: true },
-	description: { type: String, required: true },
     playlistId: { type: String, required: true },
 	created_by: {type: Schema.Types.ObjectId, ref:"User"},
 	updated_by: {type: Schema.Types.ObjectId, ref:"User"},
