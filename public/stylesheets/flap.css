@@ -45,7 +45,7 @@ div {
   margin-top: -50%;
   border-radius: 10px 10px 10px 10px;
   z-index: -1;
-  background-color: black;
+  background-color: rgba(59, 182, 235, 0)k;
   background-image: linear-gradient(rgba(59, 182, 235, 0), rgb(252, 202, 203));
   transform-origin: center;
 }
@@ -58,7 +58,7 @@ div {
   overflow: hidden;
   border-radius: 10px 10px 0 0;
   z-index: 2;
-  background-color: black;
+  background-color: rgba(59, 182, 235, 0);
   background-image: linear-gradient(rgb(252, 202, 203), rgba(59, 182, 235, 0));
   transform-origin: bottom;
 }
