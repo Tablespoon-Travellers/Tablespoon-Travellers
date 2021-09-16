@@ -1,17 +1,19 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 const Country = require("../models/Country.model");
 
-router.get('/', (req, res) => {
-    Country
-    .find()
+router.get("/", (req, res) => {
+  Country.find()
     .then((allCountries) => {
-        res.render('static/flap', {countries: JSON.stringify(allCountries), layout: false});
+      res.render("static/flap", {
+        countries: JSON.stringify(allCountries),
+        layout: false,
+      });
     })
-    .catch((error) => { 
-        console.log("Something bad happened:", error)
-        throw error
+    .catch((error) => {
+      console.log("Something bad happened:", error);
+      throw error;
     });
 });
 
