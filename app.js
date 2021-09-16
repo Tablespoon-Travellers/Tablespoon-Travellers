@@ -40,6 +40,13 @@ app.get("/", (req, res) => {
 const staticRoutes = require("./routes/static.routes");
 app.use("/static", staticRoutes);
 
+app.use(function (req, res, next) {
+	if (req.session.currentUser) {
+    req.app.locals.user = req.session.currentUser;
+	}
+  next()
+})
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
