@@ -1,4 +1,4 @@
-var express = require("express");
+/*var express = require("express");
 var router = express.Router();
 const User = require("../models/User.model");
 const bcrypt = require("bcrypt");
@@ -56,4 +56,4 @@ router.get(":id/delete", (req, res) => {
         );
     });
 
-  module.exports = router;
+  module.exports = router;*/
