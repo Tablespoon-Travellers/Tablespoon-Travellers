@@ -54,7 +54,7 @@ router.get("/:id", (req, res) => {
       try {
         drink = await yummly.search(country.drinkName);
       } catch (error) {
-        console.error("The error while fetching playlist occurred:", error);
+        console.error("The error while fetching drink occurred:", error);
       }
       res.render("countries/country-details", {
         country,

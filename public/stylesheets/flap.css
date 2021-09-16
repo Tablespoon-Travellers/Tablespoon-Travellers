@@ -15,9 +15,9 @@
 }
 
 .center {
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  top: 50%;
+  top: 50%; */
   margin-top: -50px;
   width: 100%;
   display: flex;
@@ -117,7 +117,7 @@ div {
 #HomepageText {
   text-align: center;
 }
-
+/* 
 #ButtonHomepage {
   position: relative;
   top: 13rem;
@@ -128,4 +128,4 @@ div {
   position: relative;
   top: 13rem;
   left: 16rem;
-}
+} */

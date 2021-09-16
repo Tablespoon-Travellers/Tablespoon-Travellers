@@ -27,7 +27,9 @@ a2 = document.querySelectorAll(".bottom");
 b1 = document.querySelectorAll(".nextFull");
 b2 = document.querySelectorAll(".nextHalf");
 flapButton = document.getElementById("buttonFlap")
+takeMeThere = document.getElementById("takeMeThere")
 flapButton.onclick = startFlapping
+takeMeThere.href = link.href;
 
 for (var x = 0; x < a1.length; x++) {
   a2[x].style.animationDuration = speed + "s";
@@ -93,20 +95,33 @@ for (var x = 0; x < amountOfFlaps; x++) {
   (flag[x] = false), (flag2 = true);
 }
 
+let flapIntervalId;
 // Flip them flaps /////////////////////////////////////////
 function flap() {
+  let done = true;
+  for (var x = 0; x < amountOfFlaps; x++) {
+    if (b1[x].innerHTML != endStr[x]) {
+      done = false;
+      break;
+    }
+  }
   for (var x = 0; x < amountOfFlaps; x++) {
     if (b1[x].innerHTML == endStr[x]) dontFlipIt(x);
     else flipIt(x);
   }
+  if (done) {
+    console.log('Donesies!')
+    takeMeThere.removeAttribute("disabled")
+    clearInterval(flapIntervalId);
+    window.confetti();
+  }
 }
 /*if (b1[x].innerHTML == endStr[x]) {
 type="module"
-import confetti from 'https://cdn.skypack.dev/canvas-confetti'; confetti();
 }*/
 
 function startFlapping() {
-  setInterval(flap, speed * 1000);
+    flapIntervalId = setInterval(flap, speed * 1000);
 }
 for (var x = 0; x < amountOfFlaps; x++) {
   a1[x].innerHTML = char[strCount[x]];

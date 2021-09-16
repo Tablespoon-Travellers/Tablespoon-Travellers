@@ -27,35 +27,35 @@
       <a class="navbar-item" href="/random/">
         Home
       </a>
-      {{!-- <a class="navbar-item" href="/countries">Countries</a> --}}
-      <a class="navbar-item" href="/profile/">Profile</a>
-      <a class="navbar-item" href="/about/">About</a>
+      {{! <a class="navbar-item" href="/countries">Countries</a> }}
       <a class="navbar-item" href="/countries/">Countries</a>
-      
-      {{!-- <a class="navbar-item" href="/static/flap">
+      <a class="navbar-item" href="/about/">About</a>
+
+      {{! <a class="navbar-item" href="/static/flap">
         <span class="icon mr-1" style="font-size: 24px;">
           <ion-icon name="shuffle-outline"></ion-icon>
         </span>
         Spin a random country!
-      </a> --}}
+      </a> }}
     </div>
 
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          {{log user}}
-          {{log user.username}}
           {{#if user.username}}
-          <a class="button is-danger" href="/auth/logout">
-            Log out
-          </a>
+            <a class="button is-info" href="/profile/">
+              Profile
+            </a>
+            <a class="button is-danger" href="/auth/logout">
+              Log out
+            </a>
           {{else}}
-          <a class="button is-primary" href="/auth/signup">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light" href="/auth/login">
-            Log in
-          </a>
+            <a class="button is-info" href="/auth/signup">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light" href="/auth/login">
+              Log in
+            </a>
           {{/if}}
         </div>
       </div>

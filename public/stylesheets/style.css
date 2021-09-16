@@ -8,12 +8,12 @@
 }
 
 body {
-  font: 14px "Montserat", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Montserat", "Lucida Grande", Helvetica, Arial, sans-serif;
   overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font: 14px "machina", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "machina", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 .navbar {
