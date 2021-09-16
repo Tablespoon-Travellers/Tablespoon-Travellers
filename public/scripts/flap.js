@@ -100,6 +100,11 @@ function flap() {
     else flipIt(x);
   }
 }
+/*if (b1[x].innerHTML == endStr[x]) {
+type="module"
+import confetti from 'https://cdn.skypack.dev/canvas-confetti'; confetti();
+}*/
+
 function startFlapping() {
   setInterval(flap, speed * 1000);
 }
