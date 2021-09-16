@@ -45,6 +45,7 @@ router.get("/:id", (req, res) => {
       let recipe;
       try {
         recipe = await yummly.search(country.dishName);
+        recipe.content.ingredientLines = recipe.content.ingredientLines.slice(0, 10)
       } catch (error) {
         console.error("The error while fetching recipe occurred:", error);
       }

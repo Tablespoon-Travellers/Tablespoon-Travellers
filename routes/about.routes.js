@@ -1,10 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const Country = require('./../models/Country.model');
-
 router.get('/', (req, res) => {
-	res.render('private/profile', { user: req.session.currentUser });
+	res.render('static/about');
 });
 
 module.exports = router;

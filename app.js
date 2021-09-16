@@ -22,24 +22,23 @@ const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
 const privateRoutes = require("./routes/private.routes");
-app.use("/private", isLoggedIn, privateRoutes);
+app.use("/profile", isLoggedIn, privateRoutes);
 
 const countriesRoutes = require("./routes/country.routes");
 app.use("/countries", isLoggedIn, countriesRoutes);
 
+const flapRoutes = require("./routes/flap.routes");
+app.use("/random", isLoggedIn, flapRoutes);
+
+const aboutRoutes = require("./routes/about.routes");
+app.use("/about", isLoggedIn, aboutRoutes);
+
 app.get("/", (req, res) => {
-	res.render('static/landing-page');
-})
+  res.render("static/landing-page");
+});
 
 const staticRoutes = require("./routes/static.routes");
-app.use(
-  "/static",
-  // Not sure why we need this
-  (req, res, next) => {
-    next();
-  },
-  staticRoutes
-);
+app.use("/static", staticRoutes);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -50,7 +49,7 @@ app.use(function (req, res, next) {
 app.use(function (err, req, res, next) {
   if (err.status === 404) {
     res.render("static/404");
-    return
+    return;
   }
   // set locals, only providing error in development
   res.locals.message = err.message;

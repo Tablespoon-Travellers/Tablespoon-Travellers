@@ -1,34 +1,53 @@
-<div class="columns is-multiline box">
+<div class="columns">
   <div class="column is-6">
-    <p class="title">
+    <h1 class="title is-size-1 mb-1">
       {{country.name}}
-    </p>
-    <p class="subtitle">
-      {{country.description}}
-    </p>
-    {{#if drink}}
-      <p class="subtitle">
-        Recommended cocktail:
-        {{country.drinkName}}
-        (
-        <a href="{{drink.content.details.directionsUrl}}">
-          How to make it
-        </a>
-        )
-      </p>
+    </h1>
+    {{#if recipe}}
+      <div id="recipe" class="box" style="min-height: 40vh;">
+        <div class="columns">
+          <div class="column is-12">
+            <h3 class="subtitle is-size-3 mb-0">Recommended Dish:
+              {{country.dishName}}
+            </h3>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-narrow is-4">
+            <img
+              src="{{recipe.content.details.images.0.hostedLargeUrl}}"
+              style="width: 100%;"
+            />
+            Time:
+            {{recipe.content.details.totalTime}}
+            <a
+              class="button is-link is-outlined"
+              href="{{recipe.content.details.directionsUrl}}"
+            >
+              Directions
+            </a>
+          </div>
+          <div class="column">
+            <h5 class="subtitle is-size-5 mb-1">
+              Ingredients
+            </h5>
+            <ul>
+              {{#each recipe.content.ingredientLines}}
+                <li>
+                  {{this.wholeLine}}
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
     {{/if}}
-    <div id="image">
-      <img src="{{country.imageUrl}}" />
-    </div>
     {{#if playlist}}
       <div id="playlist">
-        <h2 class="subtitle is-size-2">
+        <h3 class="subtitle is-size-3 mb-1">
           Spotify Playlist:
           {{playlist.name}}
-        </h2>
-        <a href="https://open.spotify.com/playlist/{{country.playlistId}}">
-          Open playlist
-        </a>
+        </h3>
         <iframe
           src="https://open.spotify.com/embed/playlist/{{country.playlistId}}"
           width="100%"
@@ -41,59 +60,41 @@
     {{/if}}
   </div>
   <div class="column is-6">
-    {{#if recipe}}
-    <div id="recipe" class="box">
-      <div class="columns">
-        <div class="column is-12">
-          <h2 class="subtitle is-size-2">Recommended Dish:
-            {{country.dishName}}</h2>
-        </div>
-      </div>
-      <div class="columns is-centered">
-        <div class="column is-narrow is-4">
-          <img
-            src="{{recipe.content.details.images.0.hostedLargeUrl}}"
-            style="width: 100%;"
-          />
-          Time:
-          {{recipe.content.details.totalTime}}
-          <a
-            class="button is-link is-outlined"
-            href="{{recipe.content.details.directionsUrl}}"
-          >
-            Directions
-          </a>
-        </div>
-        <div class="column">
-          <h3 class="subtitle is-size-3">
-            Ingredients
-          </h3>
-          <ul>
-            {{#each recipe.content.ingredientLines}}
-              <li>
-                {{this.wholeLine}}
-              </li>
-            {{/each}}
-          </ul>
-        </div>
-      </div>
+    <div id="image">
+      <figure class="image">
+        <img src="{{country.imageUrl}}" style="max-height: 60vh; object-fit: cover" />
+      </figure>
     </div>
+    {{#if drink}}
+      <h3 class="subtitle is-size-3 block mb-1">
+        Recommended drink:
+        <a href="{{drink.content.details.directionsUrl}}">
+          {{country.drinkName}}
+        </a>
+      </h3>
     {{/if}}
-  </div>
-</div>
-<div class="columns is-multiline">
-  <div class="column is-narrow">
-    Created by
-    {{country.created_by.username}}
-  </div>
-  <div class="column is-narrow">
-    Updated by
-    {{country.updated_by.username}}
-  </div>
-  <div class="column is-12">
-    <a class="button is-success" href="/countries/{{country._id}}/edit">Edit
-      this country</a>
-    <a class="button is-danger" href="/countries/{{country._id}}/delete">Delete
-      this country</a>
+    <div>
+      {{#if country.created_by.username }}
+      {{/if}}
+      Created by
+      {{country.created_by.username}}
+      {{#if country.created_by.username}}
+        {{#if country.updated_by.username }}
+          |
+        {{/if}}
+      {{/if}}
+      {{#if country.updated_by.username }}
+      Updated by
+      {{country.updated_by.username}}
+      {{/if}}
+    </div>
+    <div>
+      <a class="button is-success" href="/countries/{{country._id}}/edit">
+        Edit this country
+      </a>
+      <a class="button is-danger" href="/countries/{{country._id}}/delete">
+        Delete this country
+      </a>
+    </div>
   </div>
 </div>

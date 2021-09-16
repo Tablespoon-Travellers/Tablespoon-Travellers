@@ -54,7 +54,7 @@ router.post('/signup', isNotLoggedIn, (req, res) => {
 						console.log(newUser);
 						req.session.currentUser = newUser;
 						//Once created, redirect
-						res.redirect('/static/flap');
+						res.redirect('/random/');
 					})
 					.catch((err) => console.log(err));
 			}
@@ -91,7 +91,7 @@ router.post('/login', isNotLoggedIn, (req, res) => {
 
 				if (passwordCorrect) {
 					req.session.currentUser = user;
-					res.redirect('/static/flap');
+					res.redirect('/random/');
 				} else {
 					res.render('auth/login', { errorMessage: 'Input invalid' });
 				}
