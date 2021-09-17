@@ -36,19 +36,19 @@ app.use("/random", isLoggedIn, flapRoutes);
 const aboutRoutes = require("./routes/about.routes");
 app.use("/about", isLoggedIn, aboutRoutes);
 
-app.get("/", (req, res) => {
-  res.render("static/landing-page");
-});
-
 const staticRoutes = require("./routes/static.routes");
 app.use("/static", staticRoutes);
 
 app.use(function (req, res, next) {
-	if (req.session.currentUser) {
+  if (req.session.currentUser) {
     req.app.locals.user = req.session.currentUser;
-	}
-  next()
-})
+  }
+  next();
+});
+
+app.get("/", (req, res) => {
+  res.render("static/landing-page");
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
